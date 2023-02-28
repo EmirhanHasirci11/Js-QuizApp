@@ -5,6 +5,10 @@ function UI() {
     this.option_list =document.querySelector(".option_list");
     this.correctIcon = '<div class="icon"><i class="fas fa-check"></i></div>';
     this.incorrectIcon = '<div class="icon"><i class="fas fa-times"></i></div>';
+    this.score_text=document.querySelector(".score_text");
+    this.score_box=document.querySelector(".score_box")
+    this.btn_reply=document.querySelector(".btn_replay");
+    this.btn_quit=document.querySelector(".btn_quit");
 }
 UI.prototype.showQuestion = function (question) {
     let questionText = `<span> ${question.questionText}</span>`
@@ -24,4 +28,8 @@ UI.prototype.showQuestion = function (question) {
     for (let opt of options) {
         opt.setAttribute("onclick", "optionSelected(this)")
     }
+}
+
+UI.prototype.showScore=function(totalQuestion,totalCorrectAnswer){
+    this.score_text.innerHTML=`Total question:${totalQuestion} correct answer:${totalCorrectAnswer}`
 }

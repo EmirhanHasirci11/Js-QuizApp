@@ -14,12 +14,23 @@ ui.next_btn.addEventListener("click", function () {
         quiz.questionIndex++;
         showQuestion(quiz.getQuestion());
         showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
-        next_btn.classList.remove("show");
+        ui.next_btn.classList.remove("show");
     } else {
-        console.log("Quiz is over");
+        ui.score_box.classList.add("active");
+        ui.quiz_box.classList.remove("active")
+        ui.showScore(quiz.questionList.length,quiz.countOfCorrectAnswers)
+        
     }
 })
-
+ui.btn_quit.addEventListener("click",function(){
+    window.location.reload();
+})
+ui.btn_reply.addEventListener("click",function(){
+    quiz.questionIndex=0;
+    quiz.countOfCorrectAnswers=0;
+    ui.btn_start.click();
+    ui.score_box.classList.remove("active");
+})
 
 
 
@@ -47,6 +58,7 @@ function optionSelected(option) {
     let answer = option.querySelector("span b").textContent;
     let question = quiz.getQuestion();
     if (question.controlTheAnswer(answer)) {
+        quiz.countOfCorrectAnswers++;
         option.classList.add("correct")
         option.insertAdjacentHTML("beforeend", ui.correctIcon);
     } else {
