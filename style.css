@@ -95,6 +95,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+
+}
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    height: 4px;    
+    background: #F0A500;
 }
 
 .quiz_box header .timer {
@@ -119,6 +129,7 @@
     width: 25px;
     text-align: center;
 }
+
 
 /* score box */
 .score_box.active {

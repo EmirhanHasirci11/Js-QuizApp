@@ -4,6 +4,7 @@ const ui =new UI();
 ui.btn_start.addEventListener("click", function () {
     ui.quiz_box.classList.add("active");
     startTimer(9);
+    startTimerLine();
     showQuestion(quiz.getQuestion());
     showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
     ui.next_btn.classList.remove("show");    
@@ -14,8 +15,10 @@ ui.next_btn.addEventListener("click", function () {
     if (quiz.questionIndex != quiz.questionList.length - 1) {
         quiz.questionIndex++;
         clearInterval(control)
+        clearInterval(controlLine)
         ui.time_second.textContent="10";
         startTimer(9)
+        startTimerLine();
         showQuestion(quiz.getQuestion());
         showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
         ui.next_btn.classList.remove("show");
@@ -61,6 +64,7 @@ function showQuestion(question) {
 }
 function optionSelected(option) {
     clearInterval(control)
+    clearInterval(controlLine)
     let answer = option.querySelector("span b").textContent;
     let question = quiz.getQuestion();
     if (question.controlTheAnswer(answer)) {
@@ -89,6 +93,7 @@ function startTimer(time){
         time--;
         if(time<0){
             clearInterval(control);
+            clearInterval(controlLine)
             ui.time_text.textContent="Time is over";
 
             let answer =quiz.getQuestion().correctAnswer;
@@ -101,6 +106,18 @@ function startTimer(time){
                 opt.classList.add("disabled");
             }
             ui.next_btn.classList.add("show")
+        }
+    }
+}
+let controlLine;
+function startTimerLine(){
+    let line_width=550;
+    controlLine=setInterval(timer,10)
+    function timer(){
+        line_width-=0.55;
+        ui.time_line.style.width=line_width+"px";
+        if(line_width<=0){
+            clearInterval(controlLine);
         }
     }
 }
