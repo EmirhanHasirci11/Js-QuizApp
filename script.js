@@ -3,6 +3,7 @@ const ui =new UI();
 
 ui.btn_start.addEventListener("click", function () {
     ui.quiz_box.classList.add("active");
+    startTimer(9);
     showQuestion(quiz.getQuestion());
     showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
     ui.next_btn.classList.remove("show");    
@@ -12,10 +13,14 @@ ui.btn_start.addEventListener("click", function () {
 ui.next_btn.addEventListener("click", function () {
     if (quiz.questionIndex != quiz.questionList.length - 1) {
         quiz.questionIndex++;
+        clearInterval(control)
+        ui.time_second.textContent="10";
+        startTimer(9)
         showQuestion(quiz.getQuestion());
         showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
         ui.next_btn.classList.remove("show");
     } else {
+        clearInterval(control)
         ui.score_box.classList.add("active");
         ui.quiz_box.classList.remove("active")
         ui.showScore(quiz.questionList.length,quiz.countOfCorrectAnswers)
@@ -55,6 +60,7 @@ function showQuestion(question) {
     }
 }
 function optionSelected(option) {
+    clearInterval(control)
     let answer = option.querySelector("span b").textContent;
     let question = quiz.getQuestion();
     if (question.controlTheAnswer(answer)) {
@@ -73,4 +79,28 @@ function optionSelected(option) {
 function showRemainingQuestion(questionIndex,questionTotal){
     let tag=`<span class="badge bg-warning">${questionIndex} / ${questionTotal}</span>`
     document.querySelector(".question_index").innerHTML=tag;
+}
+let control;
+function startTimer(time){
+   control= setInterval(timer,1000)
+
+    function timer(){
+        ui.time_second.textContent=time;
+        time--;
+        if(time<0){
+            clearInterval(control);
+            ui.time_text.textContent="Time is over";
+
+            let answer =quiz.getQuestion().correctAnswer;
+
+            for(let opt of ui.option_list.children){
+                if(opt.querySelector("span b").textContent==answer){
+                    opt.classList.add("correct");
+                    opt.insertAdjacentHTML("beforeend",ui.correctIcon);
+                }
+                opt.classList.add("disabled");
+            }
+            ui.next_btn.classList.add("show")
+        }
+    }
 }

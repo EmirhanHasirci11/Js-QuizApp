@@ -9,6 +9,8 @@ function UI() {
     this.score_box=document.querySelector(".score_box")
     this.btn_reply=document.querySelector(".btn_replay");
     this.btn_quit=document.querySelector(".btn_quit");
+    this.time_text = document.querySelector(".time_text"),
+    this.time_second = document.querySelector(".time_second")
 }
 UI.prototype.showQuestion = function (question) {
     let questionText = `<span> ${question.questionText}</span>`
