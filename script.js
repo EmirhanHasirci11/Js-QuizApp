@@ -1,40 +1,19 @@
-function Question(questionText, options, correctAnswer) {
-    this.questionText = questionText;
-    this.options = options;
-    this.correctAnswer = correctAnswer;
-}
-Question.prototype.controlTheAnswer = function (answer) {
-    return answer === this.correctAnswer;
-}
-let questionList = [
-    new Question("2 + 2 ifadesinin sonucu nedir?", { a: "5", b: "4", c: "8", d: "6" }, "b"),
-    new Question("10 + 2 ifadesinin sonucu nedir?", { a: "12", b: "4", c: "42", d: "40" }, "a"),
-    new Question("40 + 23 ifadesinin sonucu nedir?", { a: "112", b: "43", c: "63", d: "89" }, "c"),
-    new Question("2 + 5 ifadesinin sonucu nedir?", { a: "5", b: "4", c: "8", d: "7" }, "d")
-]
-function Quiz(questionList) {
-    this.questionList = questionList;
-    this.questionIndex = 0;
-}
-Quiz.prototype.getQuestion = function () {
-    return this.questionList[this.questionIndex];
-}
 const quiz = new Quiz(questionList);
+const ui =new UI();
 
-
-document.querySelector(".btn_start").addEventListener("click", function () {
-    document.querySelector(".quiz_box").classList.add("active");
+ui.btn_start.addEventListener("click", function () {
+    ui.quiz_box.classList.add("active");
     showQuestion(quiz.getQuestion());
-    next_btn.classList.remove("show");
-    
-
+    showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
+    ui.next_btn.classList.remove("show");    
 });
 
-var next_btn=document.querySelector(".next_btn");
-next_btn.addEventListener("click", function () {
+
+ui.next_btn.addEventListener("click", function () {
     if (quiz.questionIndex != quiz.questionList.length - 1) {
         quiz.questionIndex++;
         showQuestion(quiz.getQuestion());
+        showRemainingQuestion(quiz.questionIndex+1,quiz.questionList.length)
         next_btn.classList.remove("show");
     } else {
         console.log("Quiz is over");
@@ -42,9 +21,8 @@ next_btn.addEventListener("click", function () {
 })
 
 
-const option_list = document.querySelector(".option_list")
-const correctIcon = '<div class="icon"><i class="fas fa-check"></i></div>';
-const incorrectIcon = '<div class="icon"><i class="fas fa-times"></i></div>';
+
+
 
 function showQuestion(question) {
     let questionText = `<span> ${question.questionText}</span>`
@@ -58,8 +36,8 @@ function showQuestion(question) {
         `
     }
     document.querySelector(".question_text").innerHTML = questionText;
-    option_list.innerHTML = optionHtml;
-    const options = option_list.querySelectorAll(".option");
+    ui.option_list.innerHTML = optionHtml;
+    const options = ui.option_list.querySelectorAll(".option");
 
     for (let opt of options) {
         opt.setAttribute("onclick", "optionSelected(this)")
@@ -70,13 +48,17 @@ function optionSelected(option) {
     let question = quiz.getQuestion();
     if (question.controlTheAnswer(answer)) {
         option.classList.add("correct")
-        option.insertAdjacentHTML("beforeend", correctIcon);
+        option.insertAdjacentHTML("beforeend", ui.correctIcon);
     } else {
         option.classList.add("incorrect")
-        option.insertAdjacentHTML("beforeend", incorrectIcon);
+        option.insertAdjacentHTML("beforeend", ui.incorrectIcon);
     }
-    for (let i = 0; i < option_list.children.length; i++) {
-        option_list.children[i].classList.add("disabled");
+    for (let i = 0; i < ui.option_list.children.length; i++) {
+        ui.option_list.children[i].classList.add("disabled");
     }
-    next_btn.classList.add("show");
+    ui.next_btn.classList.add("show");
+}
+function showRemainingQuestion(questionIndex,questionTotal){
+    let tag=`<span class="badge bg-warning">${questionIndex} / ${questionTotal}</span>`
+    document.querySelector(".question_index").innerHTML=tag;
 }
