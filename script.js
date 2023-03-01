@@ -1,6 +1,6 @@
+
 const quiz = new Quiz(questionList);
 const ui =new UI();
-
 ui.btn_start.addEventListener("click", function () {
     ui.quiz_box.classList.add("active");
     startTimer(9);
@@ -39,7 +39,9 @@ ui.btn_reply.addEventListener("click",function(){
     ui.btn_start.click();
     ui.score_box.classList.remove("active");
 })
-
+ui.btn_settings.addEventListener("click",function(){
+    ui.category_select.classList.toggle("active")
+})
 
 
 
