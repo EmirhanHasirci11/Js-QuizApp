@@ -12,8 +12,8 @@ function UI() {
     this.time_text = document.querySelector(".time_text"),
     this.time_second = document.querySelector(".time_second")
     this.time_line=document.querySelector(".time_line")
-    this.btn_settings=document.querySelector(".settings_button");
-    this.category_select=document.querySelector(".category_select");
+    this.btn_settings=document.querySelector(".btn_settings");   
+    this.category_shown_text=document.querySelector(".category_text span")
 }
 UI.prototype.showQuestion = function (question) {
     let questionText = `<span> ${question.questionText}</span>`
