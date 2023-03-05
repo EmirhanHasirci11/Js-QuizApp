@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <div class="offcanvas offcanvas-end align-middle show text-center " id="myOffcanvas">
+    <div class="offcanvas offcanvas-end align-middle text-center " id="myOffcanvas">
         <div class="offcanvas-header border-bottom border-5 border-danger">
             <span class="ms-auto me-auto  ">
                 <h5 class="offcanvas-title ms-4 d-inline">Settings </h5><i class="fa fa-gear"></i>
                 <p class="mb-0 ">your last selection will be saved</p>
             </span>
-            <button type="button" class="btn-close" id="btnClose"></button>
+            <button type="button" class="btn-close" ></button>
         </div>
         <div class="offcanvas-body mx-auto">
 
@@ -32,19 +32,16 @@
                     <select id="aynen" class="form-control bg-dark btn text-white ">
                         <option disabled selected value> -- select an option -- </option>
                         <option value="General"  class="dropdown-item text-white">General</option>
-                        <option value="Culturel" class="dropdown-item text-white">Culturel</option>
-                        <option value="Software" class="dropdown-item text-white">Software</option>
+                        <option value="General2" class="dropdown-item text-white">Culturel</option>
+                        <option value="General3" class="dropdown-item text-white">Software</option>
                         <option value="" class="dropdown-item text-white">Multiplication</option>
                     </select>
                     <i class="fa     ps-1 my-auto text-white pe-2 fa-angle-down"></i>
                 </div>
             </div>
-
             <div class="form-group">
-
                 <p class="mb-0">Anime</p>
                 <div class="select_button d-flex bg-dark opacity-50">
-
                     <select id="aynen" class="form-control bg-dark  btn  text-white ">
                         <option disabled selected value> -- select an option -- </option>
                         <option value="Anime(General)"class=" text-white">General</option>
@@ -55,16 +52,11 @@
                     <i  id="aynen" class="fa ps-1 my-auto text-white pe-2 fa-angle-down"></i>
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
-
     <div class="btns">
-        <button class="btn btn-warning btn_start btn-lg">Start Button</button>
-        <button class="btn btn-info btn_settings btn-lg">Ayarlar</button>
+        <button class="btn btn-warning btn_start btn-lg">Start Game</button>
+        <button class="btn btn-info btn_settings btn-lg">Settings</button>
     </div>
     <div class="category_text text-white text-center ps-2 bg-black rounded-pill">
         Category: <span>General</span>
@@ -102,10 +94,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <script src="question.js"></script>
+    <script src="question.js"></script>    
+    <script src="questionList.js"></script>    
     <script src="quiz.js"></script>
     <script src="ui.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

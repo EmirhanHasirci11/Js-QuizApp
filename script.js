@@ -1,5 +1,5 @@
-let questionList = questionList1
-const quiz = new Quiz(questionList1);
+
+var quiz = new Quiz(Tabii("General"));
 const ui = new UI();
 
 ui.btn_start.addEventListener("click", function () {
@@ -10,8 +10,8 @@ ui.btn_start.addEventListener("click", function () {
     showQuestion(quiz.getQuestion());
     showRemainingQuestion(quiz.questionIndex + 1, quiz.questionList.length)
     ui.next_btn.classList.remove("show");
-    ui.category_shown_text.hide()
-    ui.btn_settings.hide();
+    ui.category_shown_text.hide
+    ui.btn_settings.hide;
 });
 
 
@@ -126,19 +126,38 @@ function startTimerLine() {
     }
 }
 
-let selected = document.querySelectorAll(".offcanvas select")
+let selected = document.querySelectorAll(".offcanvas select ")
 
-selected.forEach((select)=>{
-    
-    select.addEventListener("change",(e)=>
-    {
-        ui.category_shown_text.innerHTML=e.target.value
-        quiz.questionList=mathQuestions
+selected.forEach((select) => {
+
+    select.addEventListener("change", (e) => {
+        ui.category_shown_text.innerHTML = e.target.value
+        console.log(e.target.value);
+        quiz.ChangeQuestionList(Tabii(e.target.value))       
+       
+       
     })
+})
+
+ui.btn_close.addEventListener("click", () => {
+    offcanvas.classList.toggle("show")
 })
 
 
 
+
+function Tabii(category) {
+
+    console.log("tabii çalıştı");
+    for(var i=0;i<questionList.length;i++){
+        if(questionList[i]["Category"]==category){
+            console.log("Kategoriler matchlendi");
+            return questionList[i]["List"]
+        }
+    }
+    return Tabii("General")
+
+}
 var offcanvas = document.getElementById("myOffcanvas");
 
 var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
@@ -150,11 +169,11 @@ var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
 var settingsControl = true;
 
 document.querySelector(".btn_settings").addEventListener("click", function () {
-    if(settingsControl==true){
+    if (settingsControl == true) {
         objOffcanvas.show();
-        settingsControl=false;
+        settingsControl = false;
 
-    }else{
+    } else {
 
         offcanvas.classList.toggle("show")
     }
