@@ -15,6 +15,7 @@ function UI() {
     this.btn_settings=document.querySelector(".btn_settings");   
     this.category_shown_text=document.querySelector(".category_text span")
     this.btn_close=document.querySelector(".btn-close")
+    this.category_alert=document.querySelector(".category_alert")
 }
 UI.prototype.showQuestion = function (question) {
     let questionText = `<span> ${question.questionText}</span>`

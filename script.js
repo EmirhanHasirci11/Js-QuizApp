@@ -133,8 +133,12 @@ selected.forEach((select) => {
     select.addEventListener("change", (e) => {
         ui.category_shown_text.innerHTML = e.target.value
         console.log(e.target.value);
-        quiz.ChangeQuestionList(selectCategory(e.target.value))       
-       
+        quiz.ChangeQuestionList(selectCategory(e.target.value))
+        ui.category_alert.innerHTML=e.target.value
+        objCanvasBottom.show()
+        setTimeout(function () {
+            objCanvasBottom.hide()
+        }, 2000);
        
     })
 })
@@ -160,6 +164,15 @@ function selectCategory(category) {
 var offcanvas = document.getElementById("myOffcanvas");
 
 var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
+    backdrop: false,
+    keyboard: false,
+    scroll: false,
+
+});
+
+var offcanvasBottom = document.getElementById("Bottom-Alert");
+
+var objCanvasBottom = new bootstrap.Offcanvas(offcanvasBottom, {
     backdrop: false,
     keyboard: false,
     scroll: false,
