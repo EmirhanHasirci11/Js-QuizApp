@@ -1,5 +1,5 @@
 
-var quiz = new Quiz(Tabii("General"));
+var quiz = new Quiz(selectCategory("General"));
 const ui = new UI();
 
 ui.btn_start.addEventListener("click", function () {
@@ -133,7 +133,7 @@ selected.forEach((select) => {
     select.addEventListener("change", (e) => {
         ui.category_shown_text.innerHTML = e.target.value
         console.log(e.target.value);
-        quiz.ChangeQuestionList(Tabii(e.target.value))       
+        quiz.ChangeQuestionList(selectCategory(e.target.value))       
        
        
     })
@@ -146,16 +146,15 @@ ui.btn_close.addEventListener("click", () => {
 
 
 
-function Tabii(category) {
+function selectCategory(category) {
 
-    console.log("tabii çalıştı");
+    
     for(var i=0;i<questionList.length;i++){
-        if(questionList[i]["Category"]==category){
-            console.log("Kategoriler matchlendi");
+        if(questionList[i]["Category"]==category){            
             return questionList[i]["List"]
         }
     }
-    return Tabii("General")
+    return selectCategory("General")
 
 }
 var offcanvas = document.getElementById("myOffcanvas");
