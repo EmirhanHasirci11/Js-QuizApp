@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="offcanvas offcanvas-end align-middle text-center " id="myOffcanvas">
+    <div class="offcanvas offcanvas-end align-middle text-center " id="Settings-Canvas">
         <div class="offcanvas-header border-bottom border-5 border-danger">
             <span class="ms-auto me-auto  ">
                 <h5 class="offcanvas-title ms-4 d-inline">Settings </h5><i class="fa fa-gear"></i>
@@ -21,56 +21,32 @@
             <button type="button" class="btn-close"></button>
         </div>
         <div class="offcanvas-body mx-auto">
-
-            <b class="border-bottom border-1 border-dark">Categories</b>
-
-            <div class="form-group">
-
-                <p class="mb-0">General</p>
-                <div class="select_button d-flex bg-dark opacity-50">
-
-                    <select id="aynen" class="form-control bg-dark btn text-white ">
+            <b class="border-bottom border-1 mb-1 border-dark">Categories</b>
+            <div class="form-group">                
+                <div class="select_button category-select d-flex bg-dark opacity-50">
+                    <select  class="form-control bg-dark btn text-white ">
                         <option disabled selected value> -- select an option -- </option>
+                        <option disabled>---General---</option>
                         <option value="General" class="dropdown-item text-white">General</option>
                         <option value="Software" class="dropdown-item text-white">Software</option>
-                    </select>
-                    <i class="fa ps-1 my-auto text-white pe-2 fa-angle-down"></i>
-                </div>
-            </div>
-            <div class="form-group">
-                <p class="mb-0">Anime</p>
-                <div class="select_button d-flex bg-dark opacity-50">
-                    <select class="form-control bg-dark  btn  text-white ">
-                        <option disabled selected value> -- select an option -- </option>
+                        <option disabled >---Anime---</option>
                         <option value="Anime(General)" class=" text-white">General</option>
-                    </select>
-                    <i class="fa ps-1 my-auto text-white pe-2 fa-angle-down"></i>
-                </div>
-            </div>
-            <div class="form-group">
-                <p class="mb-0">Movies</p>
-                <div class="select_button d-flex bg-dark opacity-50">
-                    <select id="aynen" class="form-control bg-dark  btn  text-white ">
-                        <option disabled selected value> -- select an option -- </option>
+                        <option disabled >---Series---</option>
                         <option value="Star-Wars" class=" text-white">Star-Wars</option>
                     </select>
                     <i class="fa ps-1 my-auto text-white pe-2 fa-angle-down"></i>
                 </div>
-            </div>
+            </div>        
         </div>
-    </div>
-   
-
+    </div>   
         <div style="height: 92px;" class="offcanvas offcanvas-bottom bg-dark text-white text-center " id="Bottom-Alert">
             <div class="offcanvas-header border-bottom border-5 border-danger">
                 <span class="ms-auto me-auto  ">
                     <h5 class="offcanvas-title ms-4 d-inline">Alert</h5><i class="fa fa-exclamation"></i>
                     <p class="mb-0 ">Selected category is: <span class="category_alert"></span></p>
-                </span>
-                <button type="button" class="btn-close"></button>
+                </span>                
             </div>
         </div>
-
     <div class="btns">
         <button class="btn btn-warning btn_start btn-lg">Start Game</button>
         <button class="btn btn-info btn_settings btn-lg">Settings</button>
@@ -116,6 +92,7 @@
     <script src="quiz.js"></script>
     <script src="ui.js"></script>
     <script src="script.js"></script>
+    <script src="eventListeners.js"></script>
 </body>
 
 </html>

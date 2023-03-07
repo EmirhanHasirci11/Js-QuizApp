@@ -1,71 +1,6 @@
-
 var quiz = new Quiz(selectCategory("General"));
 const ui = new UI();
-
-ui.btn_start.addEventListener("click", function () {
-    objOffcanvas.hide()
-    ui.quiz_box.classList.add("active");
-    startTimer(9);
-    startTimerLine();
-    showQuestion(quiz.getQuestion());
-    showRemainingQuestion(quiz.questionIndex + 1, quiz.questionList.length)
-    ui.next_btn.classList.remove("show");
-    ui.category_shown_text.hide
-    ui.btn_settings.hide;
-});
-
-
-
-
-ui.next_btn.addEventListener("click", function () {
-    if (quiz.questionIndex != quiz.questionList.length - 1) {
-        quiz.questionIndex++;
-        clearInterval(control)
-        clearInterval(controlLine)
-        ui.time_second.textContent = "10";
-        startTimer(9)
-        startTimerLine();
-        showQuestion(quiz.getQuestion());
-        showRemainingQuestion(quiz.questionIndex + 1, quiz.questionList.length)
-        ui.next_btn.classList.remove("show");
-    } else {
-        clearInterval(control)
-        ui.score_box.classList.add("active");
-        ui.quiz_box.classList.remove("active")
-        ui.showScore(quiz.questionList.length, quiz.countOfCorrectAnswers)
-
-    }
-})
-ui.btn_quit.addEventListener("click", function () {
-    window.location.reload();
-})
-ui.btn_reply.addEventListener("click", function () {
-    quiz.questionIndex = 0;
-    quiz.countOfCorrectAnswers = 0;
-    ui.btn_start.click();
-    ui.score_box.classList.remove("active");
-})
-
-
-function showQuestion(question) {
-    let questionText = `<span> ${question.questionText}</span>`
-    let optionHtml = '';
-    for (let option in question.options) {
-        optionHtml +=
-            `
-        <div class="option">
-        <span><b>${option}</b>: ${question.options[option]}</span>
-        </div>
-        `
-    }
-    document.querySelector(".question_text").innerHTML = questionText;
-    ui.option_list.innerHTML = optionHtml;
-    const options = ui.option_list.querySelectorAll(".option");
-
-    for (let opt of options) {
-        opt.setAttribute("onclick", "optionSelected(this)")
-    }
-}
+/*Checking the option and adding correct or incorrect attribute on option element*/
 function optionSelected(option) {
     clearInterval(control)
     clearInterval(controlLine)
@@ -82,12 +17,11 @@ function optionSelected(option) {
     for (let i = 0; i < ui.option_list.children.length; i++) {
         ui.option_list.children[i].classList.add("disabled");
     }
-    ui.next_btn.classList.add("show");
+    ui.btn_next.classList.add("show");
 }
-function showRemainingQuestion(questionIndex, questionTotal) {
-    let tag = `<span class="badge bg-warning">${questionIndex} / ${questionTotal}</span>`
-    document.querySelector(".question_index").innerHTML = tag;
-}
+
+
+/*this variable used for controlling interval*/
 let control;
 function startTimer(time) {
     control = setInterval(timer, 1000)
@@ -109,7 +43,7 @@ function startTimer(time) {
                 }
                 opt.classList.add("disabled");
             }
-            ui.next_btn.classList.add("show")
+            ui.btn_next.classList.add("show")
         }
     }
 }
@@ -126,10 +60,11 @@ function startTimerLine() {
     }
 }
 
-let selected = document.querySelectorAll(".offcanvas select ")
+/*Select list for category */
+let selected = document.querySelectorAll(".category-select select ")
 
+/*Changes the category on every selection change */
 selected.forEach((select) => {
-
     select.addEventListener("change", (e) => {
         ui.category_shown_text.innerHTML = e.target.value
         console.log(e.target.value);
@@ -142,34 +77,24 @@ selected.forEach((select) => {
        
     })
 })
-
-ui.btn_close.addEventListener("click", () => {
-    offcanvas.classList.toggle("show")
-})
-
-
-
-
-function selectCategory(category) {
-
-    
+function selectCategory(category) {    
     for(var i=0;i<questionList.length;i++){
         if(questionList[i]["Category"]==category){            
             return questionList[i]["List"]
         }
     }
     return selectCategory("General")
-
 }
-var offcanvas = document.getElementById("myOffcanvas");
-
+/*Settings canvas options */
+var offcanvas = document.getElementById("Settings-Canvas");
 var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
     backdrop: false,
     keyboard: false,
     scroll: false,
-
+    
 });
 
+/*Alert canvas options */
 var offcanvasBottom = document.getElementById("Bottom-Alert");
 
 var objCanvasBottom = new bootstrap.Offcanvas(offcanvasBottom, {
@@ -179,14 +104,3 @@ var objCanvasBottom = new bootstrap.Offcanvas(offcanvasBottom, {
 
 });
 var settingsControl = true;
-
-document.querySelector(".btn_settings").addEventListener("click", function () {
-    if (settingsControl == true) {
-        objOffcanvas.show();
-        settingsControl = false;
-
-    } else {
-
-        offcanvas.classList.toggle("show")
-    }
-})
