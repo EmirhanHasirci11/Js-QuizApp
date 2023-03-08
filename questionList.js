@@ -9,7 +9,10 @@ const questionList = [
             new Question("'Tehlikeli Oyunlar' kitabının yazarı kimdir?", { a: "Oğuz Atay", b: "Sait Faik Abasıyanık", c: "Sabahattin Ali", d: "Özdemir Asaf" }, "a"),
             new Question("2020 yılında yılın en iyi romanı ödülünü alan 'Gece Yarısı Kütüphanesi' kitabının ana karakteri kimdir", { a: "Erwin Smith", b: "Nora Seed", c: "Gregor Samsa", d: "Veronika" }, "b"),
             new Question("Optimus Prime, Megatron ve Bumblebee hangi film serisinde yer alan karakterlerdir?", { a: "Star Wars", b: "Arka Sokaklar", c: "Transformers", d: "Robot Wars" }, "c"),
-            new Question("'Cevapsız Sorular' şarkısı hangi gruba aittir?", { a: "Manga", b: "Model", c: "Adamlar", d: "Dolu Kadehi Ters Tut" }, "a")
+            new Question("'Cevapsız Sorular' şarkısı hangi gruba aittir?", { a: "Manga", b: "Model", c: "Adamlar", d: "Dolu Kadehi Ters Tut" }, "a"),
+            new Question("'Yanmış İçinden' şarkısı hangi gruba aittir?", { a: "Manga", b: "Model", c: "Adamlar", d: "Dolu Kadehi Ters Tut" }, "c"),
+            new Question("'Mey' şarkısı hangi gruba aittir?", { a: "Manga", b: "Model", c: "Adamlar", d: "Dolu Kadehi Ters Tut" }, "b"),
+            new Question("Edebiyat kitaplarında, Cemal Süreya, Edip Cansever ve Turgut Uyar hangi edebi akımın içerisinde kabul edilir?", { a: "İkinci Yeni", b: "Mavi", c: "Beş Hececiler", d: "Yedi Meşale" }, "a"),
         ]
     },
     {
