@@ -13,6 +13,13 @@ const questionList = [
             new Question("'Yanmış İçinden' şarkısı hangi gruba aittir?", { a: "Manga", b: "Model", c: "Adamlar", d: "Dolu Kadehi Ters Tut" }, "c"),
             new Question("'Mey' şarkısı hangi gruba aittir?", { a: "Manga", b: "Model", c: "Adamlar", d: "Dolu Kadehi Ters Tut" }, "b"),
             new Question("Edebiyat kitaplarında, Cemal Süreya, Edip Cansever ve Turgut Uyar hangi edebi akımın içerisinde kabul edilir?", { a: "İkinci Yeni", b: "Mavi", c: "Beş Hececiler", d: "Yedi Meşale" }, "a"),
+            new Question("Hangisi bir yazar değildir?", { a: "Franz Kafka", b: "Fyodor Dostoyevski", c: "Ernest Hemingway", d: "Mona Lisa" }, "d"),
+            new Question("Hangisi bir şarkıcı değildir?", { a: "Madonna", b: "Lady Gaga", c: "Maria Callas", d: "Picasso" }, "d"),
+            new Question("Hangisi bir gezegen değildir?", { a: "Jüpiter", b: "Satürn", c: "Plüton", d: "Mars" }, "c"),
+            new Question("İlk Türk kadın astronot kimdir?", { a: "Ayşe Yılmaz", b: "Tansu Çiller", c: "Arzu Çetin", d: "Cemre Çıtak" }, "d"),
+            new Question("Hangisi bir alaşım değildir?" ,{ a: "Bronz", b: "Altın", c: "Gümüş", d: "Pirinç" }, "b"),
+            new Question("En uzun nehir hangisidir?" ,{ a: "Nil Nehri", b: "Amazon Nehri", c: "Yangtze Nehri", d: "Mississippi Nehri" }, "b"),
+            new Question("Hangi yıl Türkiye Cumhuriyeti kurulmuştur?" ,{ a: "1920", b: "1922", c: "1923", d: "1925" }, "c"),
         ]
     },
     {
