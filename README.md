@@ -1,5 +1,5 @@
 # Js-QuizApp
-######Course Instructor:Sadık Turan
+Course Instructor:Sadık Turan
 
 You can access the **Quiz-App** on this [Link](https://emirhanhasirci11.github.io/Js-QuizApp/)
 
