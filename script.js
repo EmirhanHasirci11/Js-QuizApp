@@ -12,12 +12,20 @@ function optionSelected(option) {
         option.insertAdjacentHTML("beforeend", ui.correctIcon);
     } else {
         option.classList.add("incorrect")
+        for(let i=0;i<ui.option_list.children.length;i++){
+            let opt = ui.option_list.children[i];                       
+            if(question.controlTheAnswer(opt.querySelector("b").innerHTML)){
+               opt.classList.add("correct");
+               opt.insertAdjacentHTML("beforeend",ui.exclamationIcon)
+            }
+        }
         option.insertAdjacentHTML("beforeend", ui.incorrectIcon);
     }
     for (let i = 0; i < ui.option_list.children.length; i++) {
         ui.option_list.children[i].classList.add("disabled");
     }
     ui.btn_next.classList.add("show");
+    
 }
 
 
@@ -33,13 +41,11 @@ function startTimer(time) {
             clearInterval(control);
             clearInterval(controlLine)
             ui.time_text.textContent = "Time is over";
-
             let answer = quiz.getQuestion().correctAnswer;
-
             for (let opt of ui.option_list.children) {
                 if (opt.querySelector("span b").textContent == answer) {
                     opt.classList.add("correct");
-                    opt.insertAdjacentHTML("beforeend", ui.correctIcon);
+                    opt.insertAdjacentHTML("beforeend", ui.exclamationIcon);
                 }
                 opt.classList.add("disabled");
             }

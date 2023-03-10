@@ -1,7 +1,9 @@
+/*Reload the page for restarting the game */
 ui.btn_quit.addEventListener("click", function () {
     window.location.reload();
 })
 
+/*Re:activate the start button */
 ui.btn_replay.addEventListener("click", function () {
     quiz.questionIndex = 0;
     quiz.countOfCorrectAnswers = 0;
@@ -9,6 +11,7 @@ ui.btn_replay.addEventListener("click", function () {
     ui.score_box.classList.remove("active");
 })
 
+/*Gets the next question */
 ui.btn_next.addEventListener("click", function () {
     if (quiz.questionIndex != quiz.questionList.length - 1) {
         quiz.questionIndex++;
@@ -25,9 +28,11 @@ ui.btn_next.addEventListener("click", function () {
         ui.score_box.classList.add("active");
         ui.quiz_box.classList.remove("active")
         ui.showScore(quiz.questionList.length, quiz.countOfCorrectAnswers)
-
+        
     }
 })
+/*Starts the game*/
+
 ui.btn_start.addEventListener("click", function () {
     objOffcanvas.hide()
     ui.quiz_box.classList.add("active");
@@ -39,6 +44,8 @@ ui.btn_start.addEventListener("click", function () {
     ui.category_shown_text.hide
     ui.btn_settings.hide;
 });
+/*Settings close button*/
+
 ui.btn_close.addEventListener("click", () => {
     offcanvas.classList.toggle("show")
 })

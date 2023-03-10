@@ -17,6 +17,7 @@ function UI() {
     this.category_alert=document.querySelector(".category_alert")
     this.correctIcon = '<div class="icon"><i class="fas fa-check"></i></div>';
     this.incorrectIcon = '<div class="icon"><i class="fas fa-times"></i></div>';
+    this.exclamationIcon ='<div class="icon"><i class="fas fa-exclamation-circle"></i></div>';
 
 }
 /*Shows the question and options in html */

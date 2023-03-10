@@ -1,5 +1,5 @@
 function Quiz(questionList) {
-    this.questionList = shuffleArray(questionList);
+    this.questionList = shuffleArray(questionList).slice(0,10);
     this.questionIndex = 0;
     this.countOfCorrectAnswers=0;
 }
@@ -7,7 +7,7 @@ Quiz.prototype.getQuestion = function () {
     return this.questionList[this.questionIndex];
 }
 Quiz.prototype.ChangeQuestionList=function(newList){
-    this.questionList=shuffleArray(newList)
+    this.questionList=shuffleArray(newList).slice(0,10)
 }
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
