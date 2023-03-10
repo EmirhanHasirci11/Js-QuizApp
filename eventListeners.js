@@ -14,6 +14,7 @@ ui.btn_replay.addEventListener("click", function () {
 /*Gets the next question */
 ui.btn_next.addEventListener("click", function () {
     if (quiz.questionIndex != quiz.questionList.length - 1) {
+        ui.time_text.textContent = "Remaining Time";
         quiz.questionIndex++;
         clearInterval(control)
         clearInterval(controlLine)
