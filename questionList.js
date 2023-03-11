@@ -52,7 +52,7 @@ const questionList = [
             new Question("Elric kardeşler hangi animenin ana karakterleridirler", { a: "Naruto", b: "Fairy Tail", c: "Full Metal Alchemist", d: "Hai to Gensou no Grimgar" }, "c"),
             new Question("'Attack on Titan' evreninde keşif birliğinin en çok başarılı keşif sayısına sahip olan, 13.komutanı kimdir?", { a: "Erwin Smith", b: "Levi Ackerman", c: "Keith Shadis", d: "Hange Zoe" }, "a"),
             new Question("'Attack on Titan' evreninde seçeneklerden hangisi paradis adasındaki duvarların isimlerinden biri değildir", { a: "Wall Rose", b: "Wall Maria", c: "Wall Ymir", d: "Wall Sina" }, "c"),
-            new Question("'Kaneki Ken' hangi animenin ana karakteridir", { a: "Sword Art Onlide", b: "Toradora", c: "Sousei no Onmyoji", d: "Tokyo Ghoul" }, "d"),
+            new Question("'Kaneki Ken' hangi animenin ana karakteridir", { a: "Sword Art Online", b: "Toradora", c: "Sousei no Onmyoji", d: "Tokyo Ghoul" }, "d"),
 
         ]
     },
