@@ -5,7 +5,6 @@ function UI() {
     this.btn_replay=document.querySelector(".btn_replay");
     this.btn_quit=document.querySelector(".btn_quit");
     this.btn_settings=document.querySelector(".btn_settings");   
-
     this.quiz_box=document.querySelector(".quiz_box");
     this.option_list =document.querySelector(".option_list");
     this.score_text=document.querySelector(".score_text");

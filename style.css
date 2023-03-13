@@ -8,17 +8,20 @@
     transform: translate(-50%, -50%);
 }
 
+
 .quiz_box.active {
     opacity: 1;
     pointer-events: auto;
 
     transform: translate(-50%, -50%) scale(1);
 }
-.select_button{
+
+.select_button {
     width: 300px;
     margin-left: 20px;
 }
-.category_text{
+
+.category_text {
     top: 54%;
     width: 260px;
 }
@@ -26,10 +29,10 @@
 
 .quiz_box {
     width: 550px;
-
+    
     transform: translate(-50%, -50%) scale(0.7);
     transition: all 0.3s ease;
-
+    
     opacity: 0;
     pointer-events: none;
 }
@@ -55,7 +58,7 @@
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
-
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,6 +78,7 @@
     color: #721c24;
     background: #f8d7da;
 }
+
 .quiz_box .option_list .option.disabled {
     pointer-events: none;
 }
@@ -82,7 +86,7 @@
 .quiz_box .next_btn {
     opacity: 0;
     pointer-events: none;
-
+    
     transform: scale(0.9);
     transition: all 0.3s ease;
 }
@@ -105,7 +109,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-
+    
 }
 
 .quiz_box header .time_line {
@@ -145,7 +149,7 @@
 .score_box.active {
     opacity: 1;
     pointer-events: auto;
-
+    
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -154,10 +158,10 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
-
+    
     transform: translate(-50%, -50%) scale(0.7);
     transition: all 0.3s ease;
-
+    
     opacity: 0;
     pointer-events: none;
 }
@@ -172,4 +176,35 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .btns {
+        position: absolute;        
+        transform: translate(-50%,-50%);
+    }
+    .category_text {
+        position: absolute;
+        margin-top: 36px;        
+    }
+    .quiz_box {
+        width: 380px;        
+        transform: translate(-50%, -50%) scale(0.7);                
+        opacity: 0;
+        pointer-events: none;
+    }
+    .quiz_box header .time_line {
+        position: absolute;
+        bottom: 0;
+        left: 0;        
+        height: 4px;
+        background: #F0A500;
+    }
+    .btn_start{
+        width: 200px;
+    }
+    .btn_settings{
+        width: 200px;
+    }
+    
+    
 }

@@ -12,11 +12,11 @@ function optionSelected(option) {
         option.insertAdjacentHTML("beforeend", ui.correctIcon);
     } else {
         option.classList.add("incorrect")
-        for(let i=0;i<ui.option_list.children.length;i++){
-            let opt = ui.option_list.children[i];                       
-            if(question.controlTheAnswer(opt.querySelector("b").innerHTML)){
-               opt.classList.add("correct");
-               opt.insertAdjacentHTML("beforeend",ui.exclamationIcon)
+        for (let i = 0; i < ui.option_list.children.length; i++) {
+            let opt = ui.option_list.children[i];
+            if (question.controlTheAnswer(opt.querySelector("b").innerHTML)) {
+                opt.classList.add("correct");
+                opt.insertAdjacentHTML("beforeend", ui.exclamationIcon)
             }
         }
         option.insertAdjacentHTML("beforeend", ui.incorrectIcon);
@@ -25,7 +25,7 @@ function optionSelected(option) {
         ui.option_list.children[i].classList.add("disabled");
     }
     ui.btn_next.classList.add("show");
-    
+
 }
 
 
@@ -53,12 +53,21 @@ function startTimer(time) {
         }
     }
 }
+
+var x = window.matchMedia("(max-width: 600px)")
 let controlLine;
 function startTimerLine() {
     let line_width = 550;
+    if (x.matches) {
+        line_width = 380;
+    }
     controlLine = setInterval(timer, 10)
     function timer() {
-        line_width -= 0.55;
+        if (x.matches) {
+            line_width-=0.3723;
+        } else {
+            line_width -= 0.55;
+        }
         ui.time_line.style.width = line_width + "px";
         if (line_width <= 0) {
             clearInterval(controlLine);
@@ -75,17 +84,17 @@ selected.forEach((select) => {
         ui.category_shown_text.innerHTML = e.target.value
         console.log(e.target.value);
         quiz.ChangeQuestionList(selectCategory(e.target.value))
-        ui.category_alert.innerHTML=e.target.value
+        ui.category_alert.innerHTML = e.target.value
         objCanvasBottom.show()
         setTimeout(function () {
             objCanvasBottom.hide()
         }, 2000);
-       
+
     })
 })
-function selectCategory(category) {    
-    for(var i=0;i<questionList.length;i++){
-        if(questionList[i]["Category"]==category){            
+function selectCategory(category) {
+    for (var i = 0; i < questionList.length; i++) {
+        if (questionList[i]["Category"] == category) {
             return questionList[i]["List"]
         }
     }
@@ -97,7 +106,7 @@ var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
     backdrop: false,
     keyboard: false,
     scroll: false,
-    
+
 });
 
 /*Alert canvas options */
