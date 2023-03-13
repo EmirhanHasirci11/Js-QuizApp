@@ -37,7 +37,7 @@ ui.btn_next.addEventListener("click", function () {
 ui.btn_start.addEventListener("click", function () {
     objOffcanvas.hide()
     ui.quiz_box.classList.add("active");
-    startTimer(9);
+    startTimer(9);    
     startTimerLine();
     ui.showQuestion(quiz.getQuestion());
     ui.showRemainingQuestion(quiz.questionIndex + 1, quiz.questionList.length)

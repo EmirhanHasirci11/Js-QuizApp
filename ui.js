@@ -12,8 +12,10 @@ function UI() {
     this.time_text = document.querySelector(".time_text"),
     this.time_second = document.querySelector(".time_second")
     this.time_line=document.querySelector(".time_line")
-    this.category_shown_text=document.querySelector(".category_text span")
-    this.category_alert=document.querySelector(".category_alert")
+    this.category_shown_text=document.querySelector(".category_text span.category_inner")
+    this.question_shown_text=document.querySelector(".category_text span.questionCount_inner")
+    this.category_alert=document.querySelector(".alert_change")
+    this.alert_text=document.querySelector(".alert_text span");
     this.correctIcon = '<div class="icon"><i class="fas fa-check"></i></div>';
     this.incorrectIcon = '<div class="icon"><i class="fas fa-times"></i></div>';
     this.exclamationIcon ='<div class="icon"><i class="fas fa-exclamation-circle"></i></div>';

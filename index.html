@@ -22,37 +22,50 @@
         </div>
         <div class="offcanvas-body mx-auto">
             <b class="border-bottom border-1 mb-1 border-dark">Categories</b>
-            <div class="form-group">                
+            <div class="form-group">
                 <div class="select_button category-select d-flex bg-dark opacity-50">
                     <select class="form-control bg-dark btn text-white ">
-                        <option disabled selected value> -- select an option -- </option>                        
+                        <option disabled selected value> -- select an option -- </option>
                         <option value="General" class="dropdown-item text-white">General</option>
-                        <option value="Software" class="dropdown-item text-white">Software</option>                        
-                        <option value="Anime(General)" class=" text-white">Anime</option>                        
+                        <option value="Software" class="dropdown-item text-white">Software</option>
+                        <option value="Anime(General)" class=" text-white">Anime</option>
                         <option value="Star-Wars" class=" text-white">Star-Wars</option>
                     </select>
-                    
-                </div>
-            </div>        
-            <div class="form-group">
 
+                </div>
+            </div>
+            <b class="border-bottom border-1 mb-1 border-dark">Question Count</b><br>            
+            <div class="form-group">
+                <div class="row ">
+                    <div class="btn-group question_count_selection">
+                        <input type="radio" name="options" class="btn-check" id="option1" value="10" autocomplete="off" checked>
+                        <label for="option1" class="btn btn-danger">10</label>
+                        <input type="radio" name="options" class="btn-check" id="option2" value="15" autocomplete="off" >
+                        <label for="option2" class="btn btn-danger">15</label>
+                        <input type="radio" name="options" class="btn-check" id="option3" value="20" autocomplete="off" >
+                        <label for="option3" class="btn btn-danger">20</label>
+            
+                       
+                    </div>
+                </div>
             </div>
         </div>
-    </div>   
-        <div style="height: 92px;" class="offcanvas offcanvas-bottom bg-dark text-white text-center " id="Bottom-Alert">
-            <div class="offcanvas-header border-bottom border-5 border-danger">
-                <span class="ms-auto me-auto  ">
-                    <h5 class="offcanvas-title ms-4 d-inline">Alert</h5><i class="fa fa-exclamation"></i>
-                    <p class="mb-0 ">Selected category is: <span class="category_alert"></span></p>
-                </span>                
-            </div>
+    </div>
+    <div style="height: 92px;" class="offcanvas offcanvas-bottom bg-dark text-white text-center " id="Bottom-Alert">
+        <div class="offcanvas-header border-bottom border-5 border-danger">
+            <span class="ms-auto me-auto  ">
+                <h5 class="offcanvas-title ms-4 d-inline">Alert</h5><i class="fa fa-exclamation"></i>
+                <p class="mb-0 alert_text "><span>Selected category is:</span> <b class="alert_change"></b></p>
+            </span>
         </div>
+    </div>
     <div class="btns">
         <button class="btn btn-warning btn_start btn-lg">Start Game</button>
         <button class="btn btn-info btn_settings btn-lg">Settings</button>
     </div>
     <div class="category_text text-white text-center ps-2 bg-black rounded-pill">
-        Category: <span>General</span>
+        Category: <span class="category_inner">General</span><br>
+        Question Count: <span class="questionCount_inner">10</span>
     </div>
     <div class="card quiz_box">
         <header class="card-header">
@@ -64,11 +77,8 @@
             </div>
         </header>
         <section class="card-body">
-            <div class="question_text">
-
-            </div>
-            <div class="option_list">
-            </div>
+            <div class="question_text"></div>
+            <div class="option_list"></div>
         </section>
         <footer class="card-footer">
             <div class="question_index">

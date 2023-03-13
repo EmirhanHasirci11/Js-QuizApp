@@ -7,6 +7,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.category_text{
+    margin-top: 14px;
+}
 
 
 .quiz_box.active {
@@ -184,7 +187,7 @@
     }
     .category_text {
         position: absolute;
-        margin-top: 36px;        
+        margin-top: 44px;        
     }
     .quiz_box {
         width: 380px;        

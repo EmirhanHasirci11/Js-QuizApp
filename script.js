@@ -28,7 +28,6 @@ function optionSelected(option) {
 
 }
 
-
 /*this variable used for controlling interval*/
 let control;
 function startTimer(time) {
@@ -77,19 +76,19 @@ function startTimerLine() {
 
 /*Select list for category */
 let selected = document.querySelectorAll(".category-select select ")
-
+let category="General";
 /*Changes the category on every selection change */
 selected.forEach((select) => {
     select.addEventListener("change", (e) => {
-        ui.category_shown_text.innerHTML = e.target.value
-        console.log(e.target.value);
-        quiz.ChangeQuestionList(selectCategory(e.target.value))
+        ui.category_shown_text.innerHTML = e.target.value        
+        category=e.target.value;
+        quiz.ChangeQuestionList(selectCategory(category))
+        ui.alert_text.innerHTML="Selected category is:"
         ui.category_alert.innerHTML = e.target.value
         objCanvasBottom.show()
         setTimeout(function () {
             objCanvasBottom.hide()
         }, 2000);
-
     })
 })
 function selectCategory(category) {
@@ -100,6 +99,24 @@ function selectCategory(category) {
     }
     return selectCategory("General")
 }
+/*selecting question count */
+let selectedQuestionCountSelector = document.querySelectorAll(".question_count_selection input")
+
+/*Changes the category on every selection change */
+selectedQuestionCountSelector.forEach((qCount) => {
+    qCount.addEventListener("change", (e) => {
+        ui.question_shown_text.innerHTML = e.target.value        
+        quiz.ChangeQuestionList(selectCategory(category),e.target.value)               
+        ui.alert_text.innerHTML="Selected question count is:"
+        ui.category_alert.innerHTML = e.target.value
+        objCanvasBottom.show()
+        setTimeout(function () {
+            objCanvasBottom.hide()
+        }, 2000);
+
+    })
+})
+
 /*Settings canvas options */
 var offcanvas = document.getElementById("Settings-Canvas");
 var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
