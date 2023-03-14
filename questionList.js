@@ -30,7 +30,7 @@ const questionList = [
             new Question("Türkiye'nin ilk kadın pilotu kimdir?", { a: "Sabiha Gökçen", b: "Hürmüz Gökalp", c: "Ayşe Çavdar", d: "Zehra Aylin" }, "a"),
             new Question("Türkiye'nin ikinci büyük kenti hangisidir?", { a: "Ankara", b: "İzmir", c: "Bursa", d: "Antalya" }, "a"),
             new Question("Türkiye'nin en büyük adası hangisidir?", { a: "Gökçeada", b: "Bozcaada", c: "Marmara Adası", d: "Büyükada" }, "c"),
-            new Question("Türkiye'nin ilk yerli otomobili hangisidir?", { a: "Devrim", b: "Anadol", c: "Tofaş", d: "Renault" }, "a"),           
+            new Question("Türkiye'nin ilk yerli otomobili hangisidir?", { a: "Devrim", b: "Anadol", c: "Tofaş", d: "Renault" }, "a"),
             new Question("Türkiye'nin en yüksek bacası nerededir?", { a: "Yozgat", b: "Konya", c: "Muğla", d: "Çorum" }, "c"),
             new Question("Türkiye'deki en eski üniversite hangisidir?", { a: "İstanbul Üniversitesi", b: "Ankara Üniversitesi", c: "Ege Üniversitesi", d: "Boğaziçi Üniversitesi" }, "a"),
             new Question("Türkiye'deki en büyük göl hangisidir?", { a: "Beyşehir Gölü", b: "Van Gölü", c: "Eğirdir Gölü", d: "Uluabat Gölü" }, "b"),
@@ -52,7 +52,19 @@ const questionList = [
             new Question("Hangisi Frontend kapsamında değerlendirilemez?", { a: "CSS", b: "HTML", c: "SQL", d: "JavaScript" }, "c"),
             new Question("Hangisi Backend kapsamında değerlendirilir?", { a: "Node.js", b: "TypeScript", c: "Angular", d: "React" }, "a"),
             new Question("Hangisi javascript programlama dilini kullanmaz?", { a: "React", b: "Angular", c: "Vuejs", d: "Asp.net" }, "d"),
-            new Question(" 2 GB kaç MB eder?", { a: "256", b: "512", c: "1024", d: "2048" }, "d")
+            new Question(" 2 GB kaç MB eder?", { a: "256", b: "512", c: "1024", d: "2048" }, "d"),
+            new Question("Bir bilgisayarın işlem gücü birimine ne ad verilir?", { a: "CPU", b: "GPU", c: "RAM", d: "ROM" }, "a"),
+            new Question("Hangi işletim sistemi mobil cihazlarda en yaygın olarak kullanılır?", { a: "iOS", b: "Android", c: "Windows", d: "macOS" }, "b"),
+            new Question("Hangi internet tarayıcısı popülerliğini yitirmeye başlamıştır?", { a: "Chrome", b: "Firefox", c: "Safari", d: "Internet Explorer" }, "d"),
+            new Question("Hangi veri yapısı en son eklenen veriye ilk erişir?", { a: "Queue", b: "Stack", c: "Heap", d: "Tree" }, "b"),
+            new Question("Bir yazılımın hatalarının giderilmesi işlemine ne ad verilir?", { a: "Analiz", b: "Debugging", c: "Optimizasyon", d: "Kodlama" }, "b"),
+            new Question("Bir yazılım geliştirme sürecinde, yazılımın farklı bölümlerini birleştirerek test etmeye ne ad verilir?", { a: "Unit test", b: "Integration test", c: "System test", d: "Beta test" }, "b"),
+            new Question("Bir yazılımın kullanıcı arayüzünde, kullanıcıya hatalı giriş yaptığında gösterilen uyarılara ne ad verilir?", { a: "Prompt", b: "Warning", c: "Error message", d: "Confirmation" }, "c"),
+            new Question("Bir yazılım aracının, kullanıcının işlemi geri almasına olanak tanıyan özelliğine ne ad verilir?", { a: "Redo", b: "Undo", c: "Refresh", d: "Back" }, "b"),
+            new Question("Bir bilgisayar fare aracının, üstünde durduğunda bir açıklama metni görüntüleyen özelliğine ne ad verilir?", { a: "Tooltip", b: "Hover", c: "Gif", d: "Icon" }, "a"),
+            new Question("Bir yazılım aracının, kullanıcının çıkmadan önce verileri kaydetmek isteyip istemediğini sorma özelliğine ne ad verilir?", { a: "Exit", b: "Logout", c: "Quit", d: "Save Reminder" }, "d"),
+            new Question("Bir yazılım aracının, kullanıcının bir pencerede bulunan bilgileri başka bir pencereye taşımasını sağlayan özelliğine ne ad verilir?", { a: "Drag and drop", b: "Copy and paste", c: "Cut and paste", d: "Move and copy" }, "a"),
+            new Question("Bir yazılım aracının, kullanıcının verileri otomatik olarak kaydeden özelliğine ne ad verilir?", { a: "Save Reminder", b: "Backup", c: "Save As", d: "Autosave" }, "d"),
         ]
     },
     {
@@ -74,6 +86,43 @@ const questionList = [
             new Question("'Attack on Titan' evreninde keşif birliğinin en çok başarılı keşif sayısına sahip olan, 13.komutanı kimdir?", { a: "Erwin Smith", b: "Levi Ackerman", c: "Keith Shadis", d: "Hange Zoe" }, "a"),
             new Question("'Attack on Titan' evreninde seçeneklerden hangisi paradis adasındaki duvarların isimlerinden biri değildir", { a: "Wall Rose", b: "Wall Maria", c: "Wall Ymir", d: "Wall Sina" }, "c"),
             new Question("'Kaneki Ken' hangi animenin ana karakteridir", { a: "Sword Art Online", b: "Toradora", c: "Sousei no Onmyoji", d: "Tokyo Ghoul" }, "d"),
+            new Question("Hangi anime serisindeki ana karakter 'Monkey D. Luffy‘dır?", { a: "One Piece", b: "Bleach", c: "Naruto", d: "Fairy Tail" }, "a"),
+            new Question("Hangi anime serisindeki ana karakter 'Saitama‘dır?", { a: "One Punch Man", b: "My Hero Academia", c: "Dragon Ball Z", d: "Yu Yu Hakusho" }, "a"),
+            new Question("Hangi anime serisi, bir lise klasiğinde geçer ve baş karakteri 'Hachiman Hikigaya‘dır?", { a: "Oregairu", b: "K-On!", c: "Toradora!", d: "The Melancholy of Haruhi Suzumiya" }, "a"),
+            new Question("Hangi anime serisindeki ana karakter 'Gon Freecss‘dir?", { a: "Hunter x Hunter", b: "Fate/Zero", c: "Sword Art Online", d: "Darling in the FranXX" }, "a"),
+            new Question("Hangi anime serisindeki ana karakter 'Eren Yeager‘dır?", { a: "Attack on Titan", b: "One Piece", c: "Bleach", d: "Naruto" }, "a"),
+            new Question("Hangi anime serisindeki ana karakter 'Light Yagami‘dir?", { a: "Death Note", b: "Fullmetal Alchemist", c: "Bleach", d: "Jojo's Bizarre Adventure" }, "a"),
+            new Question("Hangi anime serisindeki ana karakter 'Natsu Dragneel‘dır?", { a: "Fairy Tail", b: "Hunter x Hunter", c: "Sword Art Online", d: "Darling in the FranXX" }, "a"),
+            new Question("Hangi anime serisindeki ana karakter 'Jotaro Kujo‘dır?", { a: "Jojo's Bizarre Adventure", b: "Fullmetal Alchemist", c: "Death Note", d: "Bleach" }, "a"),
+            new Question("Kimi no Na Wa adlı animede, Mitsuha Miyamizu hangi şehirde yaşar?", { a: "Tokyo", b: "Kyoto", c: "Osaka", d: "Itomori" }, "d"),
+            new Question("Shigatsu wa Kimi no Uso adlı animede, Kosei Arima hangi müzik aletini çalar?", { a: "Keman", b: "Piyano", c: "Gitar", d: "Keman çellosu" }, "b"),
+            new Question("Yakusoku no Neverland adlı animede, Grace Field House hangi tür yatılı okuldur?", { a: "Askeri okul", b: "Sihirli okul", c: "Müzik okulu", d: "Yetimhane" }, "d"),
+            new Question("Boku dake ga Inai Machi adlı animede, Satoru Fujinuma hangi güce sahiptir?", { a: "Zaman yolculuğu", b: "Telekinezi", c: "Hafıza manipülasyonu", d: "Elektrik kontrolü" }, "a"),
+            new Question("Koe no Katachi adlı animede, Shouya Ishida hangi engellere sahiptir?", { a: "Sağırlık", b: "Körlük", c: "Konuşamama", d: "Felç" }, "a"),
+            new Question("Kimi ni Todoke adlı animede, Sawako Kuronuma hangi takma adla anılır?", { a: "Sadako", b: "Kayako", c: "Yamada", d: "Sasaki" }, "a"),
+            new Question("Toradora! adlı animede, Taiga Aisaka hangi takma adla anılır?", { a: "Kaplan", b: "Köpekbalığı", c: "Kuş", d: "Kedi" }, "a"),
+            new Question("Kaichou wa Maid-sama! adlı animede, Misaki Ayuzawa hangi okulda okumaktadır?", { a: "Seika Lisesi", b: "Miyabigaoka Lisesi", c: "Ousai Akademisi", d: "Hakusenkan Lisesi" }, "a"),
+            new Question("Soul Eater adlı animede, Death the Kid'in silahları hangi şeylerdir?", { a: "Pistol", b: "Kılıç", c: "Kama", d: "Yay" }, "a"),
+            new Question("Nanatsu no Taizai adlı animede, Meliodas hangi günaha sahiptir?", { a: "Wrath", b: "Lust", c: "Greed", d: "Pride" }, "a"),
+            new Question("Black Clover adlı animede, Asta'nın gücü nedir?", { a: "Elemental Magic", b: "Spatial Magic", c: "Time Magic", d: "Anti Magic" }, "d"),
+            new Question("Tokyo Ghoul adlı animede, Ken Kaneki hangi organizasyonun bir parçasıdır?", { a: "Anteiku", b: "Aogiri Tree", c: "CCG", d: "Ghoul Investigators" }, "a"),
+            new Question("Gintama adlı animede, Gintoki Sakata'nın mesleği nedir?", { a: "Samurai", b: "Doktor", c: "Öğretmen", d: "Özel Dedektif" }, "a"),
+            new Question("Demon Slayer adlı animede, Tanjirou Kamado'nun kardeşinin adı nedir?", { a: "Kanao Tsuyuri", b: "Giyuu Tomioka", c: "Inosuke Hashibira", d: "Nezuko Kamado" }, "d"),
+            new Question("My Hero Academia adlı animede, Deku'nun güçleri kimden geçmiştir?", { a: "All Might", b: "Endeavor", c: "Hawks", d: "Best Jeanist" }, "a"),
+            new Question("Hunter x Hunter adlı animede, Gon Freecss'in babası kimdir?", { a: "Hisoka", b: "Ging Freecss", c: "Kurapika", d: "Leorio Paradinight" }, "b"),
+            new Question("Sword Art Online adlı animede, Kirito'nun gerçek adı nedir?", { a: "Kazuto Kirigaya", b: "Kazuto Asuna", c: "Kazuto Suguha", d: "Kazuto Sinon" }, "a"),
+            new Question("Fairy Tail adlı animede, Natsu Dragneel hangi tür büyü yapar?", { a: "Ateş Büyüsü", b: "Su Büyüsü", c: "Toprak Büyüsü", d: "Hava Büyüsü" }, "a"),
+            new Question("Naruto adlı animede, Naruto Uzumaki'nin en yakın arkadaşı kimdir?", { a: "Kakashi Hatake", b: "Sasuke Uchiha", c: "Jiraiya", d: "Shikamaru Nara" }, "b"),
+
+
+
+
+
+
+
+
+
+
 
         ]
     },
@@ -88,6 +137,29 @@ const questionList = [
             new Question("Inquisitor ekibinin 'Shadow' adı altında aradıkları kişi kimdir", { a: "Darth Nihilus", b: "Ahsoka Tano", c: "Ezra Bridger", d: "Darth Maul" }, "d"),
             new Question("Bir gezegeni yok edecek güce sahip darth hangisidir?", { a: "Darth Nihilus", b: "Darth Vader", c: "Darth Revan", d: "Darth Malgus" }, "a"),
             new Question("Anakin Skywalker'ın doğduğu gezegen hangisidir", { a: "Coruscant", b: "Bracca", c: "Tatooine", d: "Felucia" }, "c"),
+            new Question("Leia Organa'nın hangi gezegende doğduğu bilinmektedir?", { a: "Tatooine", b: "Alderaan", c: "Coruscant", d: "Naboo" }, "b"),
+            new Question("İmparatorluk güçleri tarafından kullanılan savaş istasyonunun adı nedir?", { a: "Death Star", b: "Star Destroyer", c: "TIE Fighter", d: "AT-AT" }, "a"),
+            new Question("İmparatorluk güçleri tarafından üretilen ve ayakta yürüyebilen zırhlı araçların adı nedir?", { a: "AT-AT", b: "AT-ST", c: "X-Wing", d: "TIE Fighter" }, "a"),
+            new Question("Chewbacca'nın hangi tür bir yaratık olduğu bilinmektedir?", { a: "Wookiee", b: "Ewok", c: "Jawa", d: "Tusken Raider" }, "a"),
+            new Question("Luke Skywalker'ın amcasının adı nedir?", { a: "Owen", b: "Beru", c: "Anakin", d: "Shmi" }, "a"),
+            new Question("'Hello there!' cümlesiyle efsaneleşmiş karakterin adı nedir?", { a: "General Grievous", b: "Darth Maul", c: "Anakin Skywalker", d: "Obi-Wan Kenobi" }, "d"),
+            new Question("Obi-Wan Kenobi'nin öğrencisi olan ve sonrasında karanlık tarafa geçen karakter kimdir?", { a: "Anakin Skywalker", b: "Darth Maul", c: "Count Dooku", d: "Kylo Ren" }, "a"),
+            new Question("İsyan birliği tarafından kullanılan savaş gemisi türü hangisidir ?", { a: "TIE Fighter", b: "AT-AT", c: "AT-ST", d: "X-Wing" }, "d"),
+            new Question("Obi-Wan Kenobi'nin öldürdüğü Sith Lord kimdir?", { a: "Darth Tyranus", b: "Darth Maul", c: "Darth Sidious", d: "Darth Vader" }, "b"),
+            new Question("Luke Skywalker'ın kızkardeşi kimdir?", { a: "Leia Organa", b: "Rey", c: "Jaina Solo", d: "Mara Jade" }, "a"),
+            new Question("Lando Calrissian'ın hangi gezegende doğduğu bilinmektedir?", { a: "Coruscant", b: "Tatooine", c: "Bespin", d: "Naboo" }, "c"),
+            new Question("Hangi karakter 'You underestimate my power!' repliğini söyler?", { a: "Obi-Wan Kenobi", b: "Darth Vader", c: "Anakin Skywalker", d: "Yoda" }, "c"),
+            new Question("Hangi karakter 'I am no Jedi' repliğini söyler?", { a: "Ahsoka Tano", b: "Asajj Ventress", c: "Darth Maul", d: "Darth Vader" }, "a"),
+            new Question("Hangi karakter 'I want to learn the ways of the Force and become a Jedi like my father.' repliğini söyler?", { a: "Anakin Skywalker", b: "Luke Skywalker", c: "Ben Solo", d: "Rey" }, "b"),
+            new Question("İmparatorluk lideri olan kişi kimdir?", { a: "Darth Vader", b: "Obi-Wan Kenobi", c: "Yoda", d: "Palpatine" }, "d"),
+            new Question("Hangi filmde, Darth Vader'ın 'Nooooo!' diye bağırdığı sahne yer alır?", { a: "The Phantom Menace", b: "Attack of the Clones", c: "Revenge of the Sith", d: "Return of the Jedi" }, "c"),
+            new Question("Hangi filmde, Obi-Wan Kenobi karakteri öldürülmüştür?", { a: "A New Hope", b: "The Empire Strikes Back", c: "Return of the Jedi", d: "Revenge of the Sith" }, "a"),
+            new Question("Hangi filmde, Luke Skywalker'ın Jedi yolculuğu başlamıştır?", { a: "A New Hope", b: "The Empire Strikes Back", c: "Return of the Jedi", d: "The Force Awakens" }, "a"),
+            new Question("Hangi karakter, 'I am your father' repliğini söyler?", { a: "Darth Maul", b: "Darth Sidious", c: "Darth Vader", d: "Kylo Ren" }, "c"),
+            new Question("Hangi filmde, Luke Skywalker'ın babası Darth Vader olduğu açığa çıkar?", { a: "The Phantom Menace", b: "Attack of the Clones", c: "Revenge of the Sith", d: "The Empire Strikes Back" }, "d"),
+            new Question("Hangi karakter, 'Do or do not. There is no try' repliğini söyler?", { a: "Darth Vader", b: "Obi-Wan Kenobi", c: "Luke Skywalker", d: "Yoda" }, "d"),
+            new Question("Hangi filmde, Leia Organa'nın gezegeni olan Alderaan yok edilmiştir?", { a: "A New Hope", b: "The Empire Strikes Back", c: "Return of the Jedi", d: "Rogue One" }, "a"),
+            new Question("Hangi filmde, Darth Vader'ın gerçek kimliği açığa çıkarılmıştır?", { a: "The Phantom Menace", b: "Attack of the Clones", c: "Revenge of the Sith", d: "Return of the Jedi" }, "d"),
         ]
     }
 ]
