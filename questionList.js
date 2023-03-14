@@ -17,9 +17,30 @@ const questionList = [
             new Question("Hangisi bir şarkıcı değildir?", { a: "Madonna", b: "Lady Gaga", c: "Maria Callas", d: "Picasso" }, "d"),
             new Question("Hangisi bir gezegen değildir?", { a: "Jüpiter", b: "Satürn", c: "Plüton", d: "Mars" }, "c"),
             new Question("İlk Türk kadın astronot kimdir?", { a: "Ayşe Yılmaz", b: "Tansu Çiller", c: "Arzu Çetin", d: "Cemre Çıtak" }, "d"),
-            new Question("Hangisi bir alaşım değildir?" ,{ a: "Bronz", b: "Altın", c: "Gümüş", d: "Pirinç" }, "b"),
-            new Question("En uzun nehir hangisidir?" ,{ a: "Nil Nehri", b: "Amazon Nehri", c: "Yangtze Nehri", d: "Mississippi Nehri" }, "b"),
-            new Question("Hangi yıl Türkiye Cumhuriyeti kurulmuştur?" ,{ a: "1920", b: "1922", c: "1923", d: "1925" }, "c"),
+            new Question("Hangisi bir alaşım değildir?", { a: "Bronz", b: "Altın", c: "Gümüş", d: "Pirinç" }, "b"),
+            new Question("En uzun nehir hangisidir?", { a: "Nil Nehri", b: "Amazon Nehri", c: "Yangtze Nehri", d: "Mississippi Nehri" }, "b"),
+            new Question("Hangi yıl Türkiye Cumhuriyeti kurulmuştur?", { a: "1920", b: "1922", c: "1923", d: "1925" }, "c"),
+            new Question("Türkiye'nin en yüksek dağı hangisidir?", { a: "Ağrı Dağı", b: "Erciyes Dağı", c: "Uludağ", d: "Nemrut Dağı" }, "a"),
+            new Question("Türkiye'nin doğusunda yer alan ve Türkiye'nin en büyük gölü olan göl hangisidir?", { a: "Beyşehir Gölü", b: "Van Gölü", c: "Eğirdir Gölü", d: "Uluabat Gölü" }, "b"),
+            new Question("Türkiye'nin en uzun nehri hangisidir?", { a: "Kızılırmak", b: "Fırat", c: "Sakarya", d: "Kara Su" }, "a"),
+            new Question("Türkiye'nin güneybatısında yer alan ve turizm cenneti olarak nitelendirilen ilimiz hangisidir?", { a: "Antalya", b: "İzmir", c: "Muğla", d: "Mersin" }, "c"),
+            new Question("Türkiye'nin 81 ilinden birisi olan en küçük il hangisidir?", { a: "Bartın", b: "Yalova", c: "Kırklareli", d: "Düzce" }, "b"),
+            new Question("Türkiye'nin en kalabalık şehri hangisidir?", { a: "İstanbul", b: "Ankara", c: "İzmir", d: "Bursa" }, "a"),
+            new Question("Türkiye'nin en uzun kara sınırı hangi ülkeyle paylaşılmaktadır?", { a: "Yunanistan", b: "Bulgaristan", c: "Suriye", d: "İran" }, "d"),
+            new Question("Türkiye'nin ilk kadın pilotu kimdir?", { a: "Sabiha Gökçen", b: "Hürmüz Gökalp", c: "Ayşe Çavdar", d: "Zehra Aylin" }, "a"),
+            new Question("Türkiye'nin ikinci büyük kenti hangisidir?", { a: "Ankara", b: "İzmir", c: "Bursa", d: "Antalya" }, "a"),
+            new Question("Türkiye'nin en büyük adası hangisidir?", { a: "Gökçeada", b: "Bozcaada", c: "Marmara Adası", d: "Büyükada" }, "c"),
+            new Question("Türkiye'nin ilk yerli otomobili hangisidir?", { a: "Devrim", b: "Anadol", c: "Tofaş", d: "Renault" }, "a"),           
+            new Question("Türkiye'nin en yüksek bacası nerededir?", { a: "Yozgat", b: "Konya", c: "Muğla", d: "Çorum" }, "c"),
+            new Question("Türkiye'deki en eski üniversite hangisidir?", { a: "İstanbul Üniversitesi", b: "Ankara Üniversitesi", c: "Ege Üniversitesi", d: "Boğaziçi Üniversitesi" }, "a"),
+            new Question("Türkiye'deki en büyük göl hangisidir?", { a: "Beyşehir Gölü", b: "Van Gölü", c: "Eğirdir Gölü", d: "Uluabat Gölü" }, "b"),
+            new Question("Türkiye'deki en yüksek ilçe hangisidir?", { a: "Sarıkamış", b: "Seydişehir", c: "Refahiye", d: "Köprülü" }, "a"),
+            new Question("Türkiye'deki en yüksek şelale hangisidir?", { a: "Yerköprü Şelalesi", b: "Karakaya Şelalesi", c: "Manavgat Şelalesi", d: "Kursunlu Şelalesi" }, "b"),
+            new Question("Türkiye'de kaç tane bölge bulunmaktadır?", { a: "6", b: "7", c: "8", d: "9" }, "b"),
+            new Question("Türkiye'nin ilk cumhurbaşkanı kimdir?", { a: "Mustafa Kemal Atatürk", b: "İsmet İnönü", c: "Celal Bayar", d: "Adnan Menderes" }, "a"),
+
+
+
         ]
     },
     {
