@@ -12,6 +12,8 @@ I added a few new features on this course project.
 
 - **Category selection**
 - **Alert for Category Selection**
+- **Question count selection**
+- **Responsive design for mobile devices**
 - **Settings panel** (will be updated soon...)
 - **Endless Mode** (will be added soon...)
 - **Dark Mode** (will be added soon...)
