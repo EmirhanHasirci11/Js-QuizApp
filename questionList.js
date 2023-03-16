@@ -161,5 +161,36 @@ const questionList = [
             new Question("Hangi filmde, Leia Organa'nın gezegeni olan Alderaan yok edilmiştir?", { a: "A New Hope", b: "The Empire Strikes Back", c: "Return of the Jedi", d: "Rogue One" }, "a"),
             new Question("Hangi filmde, Darth Vader'ın gerçek kimliği açığa çıkarılmıştır?", { a: "The Phantom Menace", b: "Attack of the Clones", c: "Revenge of the Sith", d: "Return of the Jedi" }, "d"),
         ]
+    }, {
+        "Category": "Game",
+        "List": [
+            new Question("Hangi oyunun kahramanı Mario'dur?", { a: "Sonic the Hedgehog", b: "Super Mario Bros", c: "The Legend of Zelda", d: "Mega Man" }, "b"),
+            new Question("Hangi oyun The Elder Scrolls serisine aittir?", { a: "Skyrim", b: "Fallout", c: "Grand Theft Auto", d: "Assassin's Creed" }, "a"),
+            new Question("Hangi oyun serisi, 'Kahramanımız, Nathan Drake, kayıp hazineleri ararken düşmanlarıyla mücadele ediyor?'", { a: "Uncharted", b: "Tomb Raider", c: "God of War", d: "Prince of Persia" }, "a"),
+            new Question("Hangi oyun serisi, 'Ana karakterimiz, bir suikastçidir ve tarihi olaylara karışır?'", { a: "Batman: Arkham serisi", b: "Hitman serisi", c: "Metal Gear Solid serisi", d: "Deus Ex serisi" }, "b"),
+            new Question("Hangi oyun serisi, 'Kahramanımız bir Spartan savaşçısıdır ve Yunan tanrılarıyla mücadele eder?'", { a: "Assassin's Creed serisi", b: "Prince of Persia serisi", c: "God of War serisi", d: "Tomb Raider serisi" }, "c"),
+            new Question("Hangi oyun serisi, 'Ana karakterimiz, bir yazılım geliştiricisi olarak çalışır ve bilinmez bir hacker tarafından avlanır?'", { a: "Watch Dogs serisi", b: "Deus Ex serisi", c: "Assassin's Creed serisi", d: "Cyberpunk 2077" }, "a"),
+            new Question("Hangi oyun, bir kahramanın zamanı geri alabilmesine izin veren bir müzik temalı platform oyunudur?", { a: "Castlevania", b: "Mega Man", c: "Braid", d: "Celeste" }, "c"),
+            new Question("Hangi oyun, bir parkur oyunudur ve oyuncuların parkurda serbestçe hareket etmelerine izin verir?", { a: "Mirror's Edge", b: "Dying Light", c: "Assassin's Creed", d: "Prince of Persia" }, "a"),
+            new Question("Hangi oyun, bir kahramanın hayatta kalmak için zorlu bir zombi kıyametiyle mücadele ettiği açık dünya bir oyunudur?", { a: "Dying Light", b: "State of Decay", c: "Dead Rising", d: "Resident Evil" }, "a"),
+            new Question("Hangi oyun serisi, 'Kahramanımız, klon bir askerdir ve bir imparatorluğun çöküşüne tanıklık eder?'", { a: "Halo serisi", b: "Mass Effect serisi", c: "Gears of War serisi", d: "Star Wars: Knights of the Old Republic serisi" }, "b"),            
+            new Question("Hangi oyun serisi, 'Kahramanımız, bir korsandır ve Karayip Denizi'nde maceralar yaşar?'", { a: "Uncharted serisi", b: "Assassin's Creed serisi", c: "Tomb Raider serisi", d: "Pirates of the Caribbean" }, "b"),
+            new Question("Hangi oyun serisi, 'Kahramanımız, bir hazine avcısıdır ve antik mezarları araştırır?'", { a: "Indiana Jones serisi", b: "Nathan Drake serisi", c: "Tomb Raider serisi", d: "Prince of Persia serisi" }, "c"),
+            new Question("Hangi oyun, bir kahramanın zombi istilasından kaçmak için bir otelde hayatta kalma mücadelesini konu alır?", { a: "Dead Rising", b: "State of Decay", c: "Dying Light", d: "Left 4 Dead" }, "c"),
+            new Question("Hangi oyun, bir kahramanın bir yabancı dünyada hayatta kalma mücadelesini konu alır ve oyunculara sonsuz bir evren sunar?", { a: "No Man's Sky", b: "Outer Wilds", c: "Subnautica", d: "Astroneer" }, "a"),
+            new Question("Hangi oyun türünde oyuncu, kendi karakterlerini yaratır ve dünyayı keşfeder?", { a: "Aksiyon", b: "Macera", c: "Rol yapma", d: "Strateji" }, "c"),
+            new Question("Hangi oyunun adı, bir çift kartın eşleştirilerek bulunması gerektiğini belirtir?", { a: "Mahjong", b: "Poker", c: "Batak", d: "Hafıza" }, "d"),
+            new Question("Hangi oyun, oyuncuların birbirlerine karşı savaştığı bir nişancı oyunudur?", { a: "Counter-Strike", b: "Minecraft", c: "Terraria", d: "The Sims" }, "a"),
+            new Question("Hangi oyun, oyuncuların bir futbol maçını yönettiği bir simülasyon oyunudur?", { a: "FIFA", b: "NBA", c: "Madden NFL", d: "NHL" }, "a"),
+            new Question("Hangisi, League of Legends oyunundaki bir şampiyon karakterinin adı değildir?", { a: "Ashe", b: "Jinx", c: "Zed", d: "Invoker" }, "d"),
+            new Question("Hangisi, Minecraft oyunundaki canavar türlerinden biridir?", { a: "Zombi", b: "Vampir", c: "Kurtadam", d: "Balrog" }, "a"),
+            new Question("Hangisi, World of Warcraft oyununda oynanabilen bir ırktır?", { a: "Naga", b: "Zerg", c: "Tauren", d: "Protoss" }, "c"),
+            new Question("Hangisi, Dota 2 oyununda oynanabilen bir karakter değildir?", { a: "Invoker", b: "Grimstroke", c: "Spectre", d: "Doomfist" }, "d"),
+            new Question("Hangisi, Counter-Strike: Global Offensive oyunundaki bir harita adıdır?", { a: "Dust II", b: "Frostbite", c: "Sandstorm", d: "Tidal Wave" }, "a"),
+            new Question("Hangisi, The Elder Scrolls V: Skyrim oyunundaki bir ırktır?", { a: "Orc", b: "Goblin", c: "Troll", d: "Giant" }, "a"),
+            new Question("Hangisi, Grand Theft Auto V oyunundaki ana karakterlerden biridir?", { a: "Franklin Clinton", b: "Max Payne", c: "Lamar Davis", d: "Tommy Vercetti" }, "a"),
+            new Question("Hangisi, Civilization VI oyununda oynanabilen bir medeniyet değildir?", { a: "Aztekler", b: "Persler", c: "Romalılar", d: "Babiller" }, "b")
+
+        ]
     }
 ]
