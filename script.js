@@ -1,5 +1,6 @@
 var quiz = new Quiz(selectCategory("General"));
 const ui = new UI();
+
 /*Checking the option and adding correct or incorrect attribute on option element*/
 function optionSelected(option) {
     clearInterval(control)

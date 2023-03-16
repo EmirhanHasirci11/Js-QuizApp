@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="">
     <div class="offcanvas offcanvas-end align-middle text-center " id="Settings-Canvas">
         <div class="offcanvas-header border-bottom border-5 border-danger">
             <span class="ms-auto me-auto  ">
@@ -19,9 +19,16 @@
             <button type="button" class="btn-close"></button>
         </div>
         <div class="offcanvas-body mx-auto">
+            <b class="border-bottom border-1 mb-1 border-dark">Theme</b>
+            <div class="form-group">
+
+                <button id="themeBtn" class="btn btn-lg btn-dark">Change Theme</button>
+            </div>
+
+
             <b class="border-bottom border-1 mb-1 border-dark">Categories</b>
             <div class="form-group">
-                <div class="select_button category-select d-flex bg-dark opacity-50">
+                <div class="select_button category-select border border-light d-flex bg-dark opacity-50">
                     <select class="form-control bg-dark btn text-white ">
                         <option disabled selected value> -- select an option -- </option>
                         <option value="General" class="dropdown-item text-white">General</option>
@@ -66,7 +73,7 @@
         Category: <span class="category_inner">General</span><br>
         Question Count: <span class="questionCount_inner">10</span>
     </div>
-    <div class="card quiz_box">
+    <div class="card quiz_box ">
         <header class="card-header">
             <div class="title">Quiz App</div>
             <div class="timer">

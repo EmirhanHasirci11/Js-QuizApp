@@ -11,6 +11,21 @@ ui.btn_replay.addEventListener("click", function () {
     ui.score_box.classList.remove("active");
 })
 
+ui.btn_theme.addEventListener("click", function () {
+    console.log(localStorage.getItem("theme"));
+    if (localStorage.getItem("theme") == "Light") {
+        localStorage.setItem("theme", "Dark")
+    }
+    else{
+        localStorage.setItem("theme","Light")
+    }
+    this.classList.toggle("bg-light")
+    this.classList.toggle("text-black")
+    document.body.classList.toggle('dark-theme')
+    document.getElementById('Settings-Canvas').classList.toggle("bg-dark")
+    document.querySelector(".quiz_box").classList.toggle("dark-theme-quizbox")
+
+})
 /*Gets the next question */
 ui.btn_next.addEventListener("click", function () {
     if (quiz.questionIndex != quiz.questionList.length - 1) {
@@ -29,7 +44,7 @@ ui.btn_next.addEventListener("click", function () {
         ui.score_box.classList.add("active");
         ui.quiz_box.classList.remove("active")
         ui.showScore(quiz.questionList.length, quiz.countOfCorrectAnswers)
-        
+
     }
 })
 /*Starts the game*/
@@ -37,7 +52,7 @@ ui.btn_next.addEventListener("click", function () {
 ui.btn_start.addEventListener("click", function () {
     objOffcanvas.hide()
     ui.quiz_box.classList.add("active");
-    startTimer(9);    
+    startTimer(9);
     startTimerLine();
     ui.showQuestion(quiz.getQuestion());
     ui.showRemainingQuestion(quiz.questionIndex + 1, quiz.questionList.length)

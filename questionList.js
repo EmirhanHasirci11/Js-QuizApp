@@ -113,17 +113,6 @@ const questionList = [
             new Question("Sword Art Online adlı animede, Kirito'nun gerçek adı nedir?", { a: "Kazuto Kirigaya", b: "Kazuto Asuna", c: "Kazuto Suguha", d: "Kazuto Sinon" }, "a"),
             new Question("Fairy Tail adlı animede, Natsu Dragneel hangi tür büyü yapar?", { a: "Ateş Büyüsü", b: "Su Büyüsü", c: "Toprak Büyüsü", d: "Hava Büyüsü" }, "a"),
             new Question("Naruto adlı animede, Naruto Uzumaki'nin en yakın arkadaşı kimdir?", { a: "Kakashi Hatake", b: "Sasuke Uchiha", c: "Jiraiya", d: "Shikamaru Nara" }, "b"),
-
-
-
-
-
-
-
-
-
-
-
         ]
     },
     {

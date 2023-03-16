@@ -5,16 +5,17 @@ function UI() {
     this.btn_replay=document.querySelector(".btn_replay");
     this.btn_quit=document.querySelector(".btn_quit");
     this.btn_settings=document.querySelector(".btn_settings");   
+    this.btn_theme=document.getElementById('themeBtn');
     this.quiz_box=document.querySelector(".quiz_box");
     this.option_list =document.querySelector(".option_list");
     this.score_text=document.querySelector(".score_text");
-    this.score_box=document.querySelector(".score_box")
-    this.time_text = document.querySelector(".time_text"),
-    this.time_second = document.querySelector(".time_second")
-    this.time_line=document.querySelector(".time_line")
-    this.category_shown_text=document.querySelector(".category_text span.category_inner")
-    this.question_shown_text=document.querySelector(".category_text span.questionCount_inner")
-    this.category_alert=document.querySelector(".alert_change")
+    this.score_box=document.querySelector(".score_box");
+    this.time_text = document.querySelector(".time_text");
+    this.time_second = document.querySelector(".time_second");
+    this.time_line=document.querySelector(".time_line");
+    this.category_shown_text=document.querySelector(".category_text span.category_inner");
+    this.question_shown_text=document.querySelector(".category_text span.questionCount_inner");
+    this.category_alert=document.querySelector(".alert_change");
     this.alert_text=document.querySelector(".alert_text span");
     this.correctIcon = '<div class="icon"><i class="fas fa-check"></i></div>';
     this.incorrectIcon = '<div class="icon"><i class="fas fa-times"></i></div>';
@@ -28,15 +29,15 @@ UI.prototype.showQuestion = function (question) {
     for (let option in question.options) {
         optionHtml +=
         `
-            <div class="option">
-                <span><b>${option}</b>: ${question.options[option]}</span>
-            </div>
+        <div class="option">
+        <span><b>${option}</b>: ${question.options[option]}</span>
+        </div>
         `
     }
     document.querySelector(".question_text").innerHTML = questionText;
     this.option_list.innerHTML = optionHtml;
     const options = this.option_list.querySelectorAll(".option");
-
+    
     for (let opt of options) {
         opt.setAttribute("onclick", "optionSelected(this)")
     }
@@ -50,4 +51,12 @@ UI.prototype.showScore=function(totalQuestion,totalCorrectAnswer){
 UI.prototype.showRemainingQuestion=function(questionIndex, questionTotal) {
     let tag = `<span class="badge bg-warning">${questionIndex} / ${questionTotal}</span>`
     document.querySelector(".question_index").innerHTML = tag;
+}
+
+if(localStorage.getItem("theme")=="Dark"){
+    document.body.classList.add('dark-theme')
+    document.getElementById('Settings-Canvas').classList.add("bg-dark")    
+    document.querySelector(".quiz_box").classList.add("dark-theme-quizbox")
+    document.getElementById("themeBtn").classList.add("bg-light")
+    document.getElementById("themeBtn").classList.add("text-black")
 }
