@@ -14,9 +14,9 @@ I added a few new features on this course project.
 - **Alert for Category Selection**
 - **Question count selection**
 - **Responsive design for mobile devices**
+- **Dark Mode**
 - **Settings panel** (will be updated soon...)
 - **Endless Mode** (will be added soon...)
-- **Dark Mode** (will be added soon...)
 - **Language Support** (will be added soon...)
 - **AI Supported Questions??** (why not if i'm bored enough)
 
