@@ -162,7 +162,7 @@ const questionList = [
             new Question("Hangi oyun, bir kahramanın zamanı geri alabilmesine izin veren bir müzik temalı platform oyunudur?", { a: "Castlevania", b: "Mega Man", c: "Braid", d: "Celeste" }, "c"),
             new Question("Hangi oyun, bir parkur oyunudur ve oyuncuların parkurda serbestçe hareket etmelerine izin verir?", { a: "Mirror's Edge", b: "Dying Light", c: "Assassin's Creed", d: "Prince of Persia" }, "a"),
             new Question("Hangi oyun, bir kahramanın hayatta kalmak için zorlu bir zombi kıyametiyle mücadele ettiği açık dünya bir oyunudur?", { a: "Dying Light", b: "State of Decay", c: "Dead Rising", d: "Resident Evil" }, "a"),
-            new Question("Hangi oyun serisi, 'Kahramanımız, klon bir askerdir ve bir imparatorluğun çöküşüne tanıklık eder?'", { a: "Halo serisi", b: "Mass Effect serisi", c: "Gears of War serisi", d: "Star Wars: Knights of the Old Republic serisi" }, "b"),            
+            new Question("Hangi oyun serisi, 'Kahramanımız, klon bir askerdir ve bir imparatorluğun çöküşüne tanıklık eder?'", { a: "Halo serisi", b: "Mass Effect serisi", c: "Gears of War serisi", d: "Star Wars: Knights of the Old Republic serisi" }, "b"),
             new Question("Hangi oyun serisi, 'Kahramanımız, bir korsandır ve Karayip Denizi'nde maceralar yaşar?'", { a: "Uncharted serisi", b: "Assassin's Creed serisi", c: "Tomb Raider serisi", d: "Pirates of the Caribbean" }, "b"),
             new Question("Hangi oyun serisi, 'Kahramanımız, bir hazine avcısıdır ve antik mezarları araştırır?'", { a: "Indiana Jones serisi", b: "Nathan Drake serisi", c: "Tomb Raider serisi", d: "Prince of Persia serisi" }, "c"),
             new Question("Hangi oyun, bir kahramanın zombi istilasından kaçmak için bir otelde hayatta kalma mücadelesini konu alır?", { a: "Dead Rising", b: "State of Decay", c: "Dying Light", d: "Left 4 Dead" }, "c"),
@@ -179,6 +179,41 @@ const questionList = [
             new Question("Hangisi, The Elder Scrolls V: Skyrim oyunundaki bir ırktır?", { a: "Orc", b: "Goblin", c: "Troll", d: "Giant" }, "a"),
             new Question("Hangisi, Grand Theft Auto V oyunundaki ana karakterlerden biridir?", { a: "Franklin Clinton", b: "Max Payne", c: "Lamar Davis", d: "Tommy Vercetti" }, "a"),
             new Question("Hangisi, Civilization VI oyununda oynanabilen bir medeniyet değildir?", { a: "Aztekler", b: "Persler", c: "Romalılar", d: "Babiller" }, "b")
+
+        ]
+    }, {
+        "Category": "The-Boys",
+        "List": [
+            new Question("The Boys çizgi romanında, ana karakterlerimizden olan Hughie Campbell'in ilk kız arkadaşının adı nedir?", { a: "Becca Butcher", b: "Annie January", c: "Robin Ward", d: "Starlight" }, "c"),
+            new Question("The Boys çizgi romanında, hangi karakterin adı aynı zamanda bir ülkenin adıdır?", { a: "Kimiko Miyashiro", b: "Butcher", c: "Billy Butcher", d: "Black Noir" }, "d"),
+            new Question("The Boys çizgi romanında, Homelander’in başında bulunduğu süper kahraman grubunun adı nedir?", { a: "The Seven", b: "The Elite", c: "The Heroes", d: "The Supers" }, "a"),
+            new Question("The Boys çizgi romanında, Hughie'nin babası kimdir?", { a: "Bill Butcher", b: "Lenny Campbell", c: "Jack From Jupiter", d: "The Frenchman" }, "b"),
+            new Question("The Boys çizgi romanında, Hughie'nin babasının ölümünden sorumlu olan Supes hangileridir?", { a: "A-Train ve The Deep", b: "Translucent ve Homelander", c: "Black Noir ve Queen Maeve", d: "Starlight ve Lamplighter" }, "a"),
+            new Question("The Boys çizgi romanında, The Boys'ın lideri kimdir?", { a: "Billy Butcher", b: "Hughie Campbell", c: "Mother's Milk", d: "Frenchie" }, "a"),
+            new Question("The Boys çizgi romanında, Hangi karakterin gücü, herhangi bir şeyi telekinezi kullanarak patlatmaktır?", { a: "Homelander", b: "Billy Butcher", c: "Kimiko Miyashiro", d: "Mister Marathon" }, "d"),
+            new Question("The Boys çizgi romanında, hangi karakter, Homelander'ı öldürmek için yola çıkmıştır?", { a: "Billy Butcher", b: "Hughie Campbell", c: "Kimiko Miyashiro", d: "Black Noir" }, "a"),
+            new Question("The Boys çizgi romanında, kim The Boys’ın en zayıf üyesidir?", { a: "Hughie Campbell", b: "Mother’s Milk", c: "Frenchie", d: "Butcher" }, "c"),
+            new Question("The Boys çizgi romanında, hangi karakterin ismi, bir kahramanın isminin ne olduğunu tahmin edin çekilişiyle belirlenmiştir?", { a: "Lamplighter", b: "The Deep", c: "Translucent", d: "Queen Maeve" }, "a"),
+            new Question("The Boys çizgi romanında, hangi üye gerçekte bir Suçlu'dur?", { a: "Billy Butcher", b: "Hughie Campbell", c: "Mother's Milk", d: "The Frenchman" }, "a"),
+            new Question("The Boys çizgi romanında, kimin 'küçük bir şekilciğinin' olduğunu iddia eden bir video internete sızdırılır?", { a: "The Deep", b: "A-Train", c: "Homelander", d: "Queen Maeve" }, "c"),
+            new Question("The Boys çizgi romanında, The Boys'ın karşılaştığı ilk Supes kimdir?", { a: "A-Train", b: "Translucent", c: "Black Noir", d: "Homelander" }, "b"),
+            new Question("The Boys çizgi romanında hangi karakterin, bir Supes'ı öldürmek istemeyeceği söylenir?", { a: "Billy Butcher", b: "Hughie Campbell", c: "Mother's Milk", d: "The Female" }, "d"),
+            new Question("The Boys çizgi romanında, hangi karakter, eski bir üye olduğu için The Seven'ın sırlarını biliyor?", { a: "Billy Butcher", b: "Hughie Campbell", c: "Mother's Milk", d: "Lamplighter" }, "d"),
+            new Question("The Boys çizgi romanında, hangi karakter, bir Supes tarafından öldürülmüştür?", { a: "Lenny Campbell", b: "Robin Ward", c: "Becca Butcher", d: "Susan Raynor" }, "b"),
+            new Question("The Boys çizgi romanında, kimin yüzü suç işlemekte kullanılan bir maske olarak kullanılmıştır?", { a: "Queen Maeve", b: "Starlight", c: "Translucent", d: "A-Train" }, "c"),        
+            new Question("The Boys dizisinde, ana karakterlerden biri olan ve güçleri sayesinde yüksek zıplama yeteneği kazanmış olan karakterin ismi nedir?", { a: "Homelander", b: "Black Noir", c: "Starlight", d: "Queen Maeve" }, "c"),
+            new Question("The Boys dizisinde, Vought International firmasının başındaki kişinin ismi nedir?", { a: "Stan Edgar", b: "Steward", c: "Ashley Barrett", d: "Madelyn Stillwell" }, "a"),
+            new Question("The Boys dizisinde, Billy Butcher karakterini canlandıran oyuncunun ismi nedir?", { a: "Karl Urban", b: "Antony Starr", c: "Jack Quaid", d: "Erin Moriarty" }, "a"),
+            new Question("The Boys dizisinde, Translucent karakterinin süper gücü nedir?", { a: "Görünmezlik", b: "Güç kalkanı", c: "Telekinezi", d: "Süper hız" }, "a"),
+            new Question("The Boys dizisinde, Starlight karakterini canlandıran oyuncunun ismi nedir?", { a: "Erin Moriarty", b: "Karen Fukuhara", c: "Jessie T. Usher", d: "Elisabeth Shue" }, "a"),
+            new Question("The Boys dizisinde, The Deep karakterinin süper gücü nedir?", { a: "Su altında yaşama", b: "Süper güç", c: "Uzayda yaşama", d: "Telekinezi" }, "a"),
+            new Question("The Boys dizisinde, Black Noir karakterinin süper gücü nedir?", { a: "Güç kalkanı", b: "Görünmezlik", c: "Telekinezi", d: "Süper hız" }, "a"),
+            new Question("The Boys dizisinde, Kimiko karakteri hangi ülkeden gelmektedir?", { a: "Japonya", b: "Çin", c: "Vietnam", d: "Kore" }, "a"),
+            new Question("The Boys dizisinde, Stormfront karakterinin süper gücü nedir?", { a: "Elektrik kontrolü", b: "Telekinezi", c: "Güç kalkanı", d: "Süper hız" }, "a"),
+            new Question("The Boys dizisinde, Homelander karakterinin süper gücü nedir?", { a: "Uçabilme", b: "Süper güç", c: "Güç kalkanı", d: "Telekinezi" }, "b"),
+            new Question("The Boys dizisinde, A-Train karakterinin süper gücü nedir?", { a: "Süper hız", b: "Görünmezlik", c: "Telekinezi", d: "Güç kalkanı" }, "a"),
+            new Question("The Boys dizisinde, Vought International firmasının kurucusunun ismi nedir?", { a: "Frederick Vought", b: "Stan Edgar", c: "Madelyn Stillwell", d: "James Stillwell" }, "a"),
+
 
         ]
     }
