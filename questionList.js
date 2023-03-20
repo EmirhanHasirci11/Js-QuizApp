@@ -251,5 +251,28 @@ const questionList = [
             new Question("Hangi karakter, bir grup uzaylı tarafından yaratılmıştır?", { a: "Drax", b: "Rocket Raccoon", c: "Groot", d: "Star-Lord" }, "b"),
             new Question("Hangi karakter, bir grup suçlu ile birlikte çalışır?", { a: "Daredevil", b: "The Punisher", c: "Wolverine", d: "Blade" }, "b"),
         ]
+    }, {
+        "Category": "LeagueOfLegends",
+        "List": [
+            new Question("League of Legends'da, hangi şampiyonun adı 'Karanlık Kraliçe' anlamına gelir?", { a: "Elise", b: "Evelynn", c: "Katarina", d: "Ahri" }, "a"),
+            new Question("League of Legends'da, hangi şampiyon 'Kanlı Ay' olarak bilinir?", { a: "Akali", b: "Diana", c: "Leona", d: "Soraka" }, "a"),
+            new Question("League of Legends'da, hangi şampiyonun adı 'Karanlık Yıldız' anlamına gelir?", { a: "Zoe", b: "Jhin", c: "Veigar", d: "Syndra" }, "d"),
+            new Question("League of Legends'da, hangi şampiyon 'Hayalet Şövalye' olarak bilinir?", { a: "Hecarim", b: "Mordekaiser", c: "Karthus", d: "Yorick" }, "a"),
+            new Question("League of Legends'da, oyuncuların kullanabileceği kaç adet sihirdar büyüsü vardır?", { a: "5", b: "6", c: "7", d: "8" }, "c"),
+            new Question("League of Legends'da, hangi rol koridor dışında oynanır?", { a: "Orta Koridor", b: "Orman", c: "Şampiyon Çokluğu", d: "Destek" }, "b"),
+            new Question("League of Legends'da, oyuncuların rastgele seçilen karakterlerle oynadığı oyun moduna ne ad verilir?", { a: "Rastgele Mod", b: "Seçim Modu", c: "ARAM", d: "Doğaçlama Modu" }, "c"),
+            new Question("League of Legends'da, yeni başlayan oyunculara tavsiye edilen şampiyon rolü nedir?", { a: "Destek", b: "Orta Koridor", c: "Nişancı", d: "Üst Koridor" }, "a"),
+            new Question("League of Legends'da, oyuncuların sahip olduğu mavi renkli enerjiye ne ad verilir?", { a: "Mana", b: "Güç", c: "Kan", d: "Öfke" }, "a"),
+            new Question("League of Legends'da, rakip takımın destekçilerine saldırmak yerine sadece rakiplerin çiftliğindeki yaratıkları öldürerek güçlenen oyunculara ne ad verilir?", { a: "Farming", b: "Ezici güç", c: "Koruyucu", d: "Takım oyuncusu" }, "a"),
+            new Question("League of Legends'da, oyuncuların rakip takımın üssünü yok etmek için yapmaları gereken son saldırıya ne ad verilir?", { a: "Kritik saldırı", b: "Baron saldırısı", c: "Kale saldırısı", d: "Nexus saldırısı" }, "d"),
+            new Question("League of Legends'ta, her takımda kaç adet oyuncu bulunur?", { a: "5", b: "6", c: "7", d: "8" }, "a"),
+            new Question("League of Legends'ta, hangi şampiyon çoğunlukla ormanda oynanır?", { a: "Pyke", b: "Karma", c: "Zac", d: "Lulu" }, "c"),
+            new Question("League of Legends'ta, hangi şampiyon en yüksek saldırı hasarına sahiptir?", { a: "Ashe", b: "Draven", c: "Jhin", d: "Tristana" }, "c"),
+            new Question("League of Legends'ta, hangi şampiyon en yüksek cana sahiptir?", { a: "Nasus", b: "Shen", c: "Mordekaiser", d: "Garen" }, "c"),
+            new Question("League of Legends'ta, hangi şampiyon en yüksek enerji şampiyon hasarına sahiptir?", { a: "Akali", b: "Kennen", c: "Shen", d: "Zed" }, "d"),
+            new Question("League of Legends'ta, hangi şampiyon ADC'dir", { a: "Lux", b: "Kennen", c: "Urgot", d: "Vayne" }, "d"),
+            new Question("League of Legends'ta, hangi şampiyon Işık büyüsü kullanır", { a: "Lux", b: "Garen", c: "Urgot", d: "Darius" }, "a"),
+            new Question("League of Legends'ta, hangi şampiyon Jöleye benzer maddeden yapılmıştır", { a: "Zac", b: "Lux", c: "Annie", d: "Aphelios" }, "a"),
+        ]
     }
 ]
