@@ -83,7 +83,7 @@ selected.forEach((select) => {
     select.addEventListener("change", (e) => {
         ui.category_shown_text.innerHTML = e.target.value        
         category=e.target.value;
-        quiz.ChangeQuestionList(selectCategory(category))
+        quiz.ChangeQuestionList(selectCategory(category),questionCount)
         ui.alert_text.innerHTML="Selected category is:"
         ui.category_alert.innerHTML = e.target.value
         objCanvasBottom.show()
@@ -100,14 +100,16 @@ function selectCategory(category) {
     }
     return selectCategory("General")
 }
+var questionCount=10;
 /*selecting question count */
 let selectedQuestionCountSelector = document.querySelectorAll(".question_count_selection input")
 
 /*Changes the category on every selection change */
 selectedQuestionCountSelector.forEach((qCount) => {
     qCount.addEventListener("change", (e) => {
-        ui.question_shown_text.innerHTML = e.target.value        
-        quiz.ChangeQuestionList(selectCategory(category),e.target.value)               
+        ui.question_shown_text.innerHTML = e.target.value
+        guestionCount=e.target.value;        
+        quiz.ChangeQuestionList(selectCategory(category),questionCount)               
         ui.alert_text.innerHTML="Selected question count is:"
         ui.category_alert.innerHTML = e.target.value
         objCanvasBottom.show()
