@@ -108,7 +108,7 @@ let selectedQuestionCountSelector = document.querySelectorAll(".question_count_s
 selectedQuestionCountSelector.forEach((qCount) => {
     qCount.addEventListener("change", (e) => {
         ui.question_shown_text.innerHTML = e.target.value
-        guestionCount=e.target.value;        
+        questionCount=e.target.value;        
         quiz.ChangeQuestionList(selectCategory(category),questionCount)               
         ui.alert_text.innerHTML="Selected question count is:"
         ui.category_alert.innerHTML = e.target.value
